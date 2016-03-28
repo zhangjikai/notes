@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>基本使用 | Notes</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.4">
+        <meta name="author" content="zhangjikai">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./git.html" />
+    
+    
+    <link rel="prev" href="./maven.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.1"
+        data-chapter-title="基本使用"
+        data-filepath="maven_basicuse.md"
+        data-basepath="."
+        data-revision="Mon Mar 28 2016 21:06:14 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="maven.html">
+            
+                
+                    <a href="./maven.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Maven
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="maven_basicuse.html">
+            
+                
+                    <a href="./maven_basicuse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="git.html">
+            
+                
+                    <a href="./git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="git_basicuse.html">
+            
+                
+                    <a href="./git_basicuse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Notes</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<h3 id="&#x914D;&#x7F6E;mirrors">&#x914D;&#x7F6E;mirrors</h3>
+<p>&#x627E;&#x5230; &#x5B89;&#x88C5;&#x76EE;&#x5F55;/conf/setting.xml </p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">mirrors</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">mirror</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">id</span>&gt;</span>nexus-osc<span class="hljs-tag">&lt;/<span class="hljs-title">id</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">mirrorOf</span>&gt;</span>central<span class="hljs-tag">&lt;/<span class="hljs-title">mirrorOf</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>Nexus osc<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">url</span>&gt;</span>http://maven.oschina.net/content/groups/public/<span class="hljs-tag">&lt;/<span class="hljs-title">url</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">mirror</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">mirror</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">id</span>&gt;</span>nexus-tmatesoft<span class="hljs-tag">&lt;/<span class="hljs-title">id</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">mirrorOf</span>&gt;</span>central<span class="hljs-tag">&lt;/<span class="hljs-title">mirrorOf</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">name</span>&gt;</span>Nexus tmatesoft<span class="hljs-tag">&lt;/<span class="hljs-title">name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">url</span>&gt;</span>http://maven.tmatesoft.com/content/groups/public/<span class="hljs-tag">&lt;/<span class="hljs-title">url</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">mirror</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">mirrors</span>&gt;</span>
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;properties&#x5B9A;&#x4E49;&#x53D8;&#x91CF;">&#x4F7F;&#x7528;properties&#x5B9A;&#x4E49;&#x53D8;&#x91CF;</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">properties</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">spring.version</span>&gt;</span>4.2.3.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-title">spring.version</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">properties</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">dependencies</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">dependency</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">groupId</span>&gt;</span>org.springframework<span class="hljs-tag">&lt;/<span class="hljs-title">groupId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">artifactId</span>&gt;</span>spring-context<span class="hljs-tag">&lt;/<span class="hljs-title">artifactId</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">version</span>&gt;</span>${spring.version}<span class="hljs-tag">&lt;/<span class="hljs-title">version</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">dependency</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">dependencies</span>&gt;</span>
+</code></pre>
+<h3 id="&#x5B9A;&#x4E49;source&#x548C;resources&#x6587;&#x4EF6;&#x5939;">&#x5B9A;&#x4E49;source&#x548C;resources&#x6587;&#x4EF6;&#x5939;</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">build</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">sourceDirectory</span>&gt;</span>src/main/java<span class="hljs-tag">&lt;/<span class="hljs-title">sourceDirectory</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">testSourceDirectory</span>&gt;</span>src/test/java<span class="hljs-tag">&lt;/<span class="hljs-title">testSourceDirectory</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">resources</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">resource</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">directory</span>&gt;</span>src/main/resources<span class="hljs-tag">&lt;/<span class="hljs-title">directory</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">resource</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">resources</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">build</span>&gt;</span>
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;&#x7F16;&#x8BD1;jdk&#x7248;&#x672C;&#x53CA;&#x751F;&#x6210;jar&#x5305;">&#x914D;&#x7F6E;&#x7F16;&#x8BD1;JDK&#x7248;&#x672C;&#x53CA;&#x751F;&#x6210;jar&#x5305;</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">build</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">plugins</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- &#x8BBE;&#x7F6E;&#x7F16;&#x8BD1;level --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">plugin</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">artifactId</span>&gt;</span>maven-compiler-plugin<span class="hljs-tag">&lt;/<span class="hljs-title">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">configuration</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">target</span>&gt;</span>1.7<span class="hljs-tag">&lt;/<span class="hljs-title">target</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">source</span>&gt;</span>1.7<span class="hljs-tag">&lt;/<span class="hljs-title">source</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">encoding</span>&gt;</span>UTF-8<span class="hljs-tag">&lt;/<span class="hljs-title">encoding</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">configuration</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">plugin</span>&gt;</span>
+
+        <span class="hljs-comment">&lt;!-- &#x914D;&#x7F6E;&#x751F;&#x6210;&#x72EC;&#x7ACB;jar, &#x6267;&#x884C; mvn package &#x547D;&#x4EE4;--&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">plugin</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">groupId</span>&gt;</span>org.apache.maven.plugins<span class="hljs-tag">&lt;/<span class="hljs-title">groupId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">artifactId</span>&gt;</span>maven-assembly-plugin<span class="hljs-tag">&lt;/<span class="hljs-title">artifactId</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">version</span>&gt;</span>2.5.5<span class="hljs-tag">&lt;/<span class="hljs-title">version</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">configuration</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">archive</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">manifest</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">mainClass</span>&gt;</span>bitpal.Main<span class="hljs-tag">&lt;/<span class="hljs-title">mainClass</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">manifest</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">archive</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">descriptorRefs</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">descriptorRef</span>&gt;</span>jar-with-dependencies<span class="hljs-tag">&lt;/<span class="hljs-title">descriptorRef</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">descriptorRefs</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">configuration</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">executions</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-title">execution</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">id</span>&gt;</span>make-assembly<span class="hljs-tag">&lt;/<span class="hljs-title">id</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">phase</span>&gt;</span>package<span class="hljs-tag">&lt;/<span class="hljs-title">phase</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-title">goals</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-title">goal</span>&gt;</span>single<span class="hljs-tag">&lt;/<span class="hljs-title">goal</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-title">goals</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-title">execution</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-title">executions</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">plugin</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-title">plugins</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">build</span>&gt;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./maven.html" class="navigation navigation-prev " aria-label="Previous page: Maven"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./git.html" class="navigation navigation-next " aria-label="Next page: Git"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/notes"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
