@@ -13,8 +13,8 @@
 
 ## Git
 - [基本使用](Git/git_basicuse.md)
-  -[分支](Git/git_basicuse.md#分支)
+  - [分支](Git/git_basicuse.md#分支)
 
 - [gitignore](Git/git_gitignore.md)
-  -[IntelliJ IDEA + MAVEN](Git/git_gitignore.md#intellij-idea--maven)
+  - [IntelliJ IDEA + MAVEN](Git/git_gitignore.md#intellij-idea--maven)
 
