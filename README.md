@@ -3,5 +3,5 @@
 
 ## Maven
 ### 基本使用
-- [配置mirrors]()
--
+- [配置mirrors](Maven/maven_basicuse.md#配置mirrors)
+
