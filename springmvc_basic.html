@@ -43,10 +43,10 @@
         
     
     
-    <link rel="next" href="./git_gitignore.html" />
+    <link rel="next" href="./tool.html" />
     
     
-    <link rel="prev" href="./git.html" />
+    <link rel="prev" href="./springmvc.html" />
     
 
         
@@ -55,9 +55,9 @@
         
         
     <div class="book"
-        data-level="2.1"
+        data-level="3.2.1"
         data-chapter-title="基本使用"
-        data-filepath="git_basicuse.md"
+        data-filepath="springmvc_basic.md"
         data-basepath="."
         data-revision="Wed Apr 06 2016 20:36:02 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -140,7 +140,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="2.1" data-path="git_basicuse.html">
+        <li class="chapter " data-level="2.1" data-path="git_basicuse.html">
             
                 
                     <a href="./git_basicuse.html">
@@ -222,7 +222,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.2.1" data-path="springmvc_basic.html">
+        <li class="chapter active" data-level="3.2.1" data-path="springmvc_basic.html">
             
                 
                     <a href="./springmvc_basic.html">
@@ -317,15 +317,23 @@
                     <section class="normal" id="section-">
                     
                         <h2 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="plugin-anchor" href="#&#x57FA;&#x672C;&#x4F7F;&#x7528;"><span class="fa fa-link"></span></a>&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
-<h3 id="&#x5206;&#x652F;"><a name="&#x5206;&#x652F;" class="plugin-anchor" href="#&#x5206;&#x652F;"><span class="fa fa-link"></span></a>&#x5206;&#x652F;</h3>
-<p><strong> &#x521B;&#x5EFA;</strong></p>
-<pre><code class="lang-bash">git branch gh-pages
-</code></pre>
-<p><strong> &#x5207;&#x6362;</strong></p>
-<pre><code class="lang-bash">git checkout gh-pages
-</code></pre>
-<p><strong>&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;</strong></p>
-<pre><code class="lang-bash"> git checkout -b gh-pages
+<ul>
+<li><a href="#&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;">&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</a></li>
+</ul>
+<h3 id="&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;"><a name="&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;"><span class="fa fa-link"></span></a>&#x8FD4;&#x56DE;&#x9875;&#x9762;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</h3>
+<pre><code class="lang-java">
+<span class="hljs-annotation">@RequestMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> ModelAndView <span class="hljs-title">welcome</span> <span class="hljs-params">(ModelMap model)</span> </span>{
+    ModelAndView view = <span class="hljs-keyword">new</span> ModelAndView(<span class="hljs-string">&quot;index&quot;</span>);
+    model.addAttribute(<span class="hljs-string">&quot;introSelf&quot;</span>, <span class="hljs-string">&quot;I&apos;m Spring, I&apos;m Coming.&quot;</span>);
+    <span class="hljs-keyword">return</span> view;
+}
+
+<span class="hljs-annotation">@RequestMapping</span>(<span class="hljs-string">&quot;/&quot;</span>)
+<span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">welcome</span> <span class="hljs-params">(ModelMap model)</span> </span>{
+    model.addAttribute(<span class="hljs-string">&quot;introSelf&quot;</span>, <span class="hljs-string">&quot;I&apos;m Spring, I&apos;m Coming.&quot;</span>);
+    <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;index&quot;</span>;
+}
 </code></pre>
 
                     
@@ -337,10 +345,10 @@
         </div>
 
         
-        <a href="./git.html" class="navigation navigation-prev " aria-label="Previous page: Git"><i class="fa fa-angle-left"></i></a>
+        <a href="./springmvc.html" class="navigation navigation-prev " aria-label="Previous page: mvc"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./git_gitignore.html" class="navigation navigation-next " aria-label="Next page: gitignore"><i class="fa fa-angle-right"></i></a>
+        <a href="./tool.html" class="navigation navigation-next " aria-label="Next page: 开发工具"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

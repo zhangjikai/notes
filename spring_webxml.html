@@ -1,0 +1,446 @@
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>web.xml 配置 | Notes</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.4">
+        <meta name="author" content="zhangjikai">
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search-pro/search-pro.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="./styles/website.css">
+    
+
+        
+    
+    
+    <link rel="next" href="./springmvc.html" />
+    
+    
+    <link rel="prev" href="./spring.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.1"
+        data-chapter-title="web.xml 配置"
+        data-filepath="spring_webxml.md"
+        data-basepath="."
+        data-revision="Wed Apr 06 2016 20:36:02 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="maven.html">
+            
+                
+                    <a href="./maven.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Maven
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="maven_basicuse.html">
+            
+                
+                    <a href="./maven_basicuse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="git.html">
+            
+                
+                    <a href="./git.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Git
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="git_basicuse.html">
+            
+                
+                    <a href="./git_basicuse.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="git_gitignore.html">
+            
+                
+                    <a href="./git_gitignore.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        gitignore
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="spring.html">
+            
+                
+                    <a href="./spring.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Spring
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1" data-path="spring_webxml.html">
+            
+                
+                    <a href="./spring_webxml.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        web.xml 配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="springmvc.html">
+            
+                
+                    <a href="./springmvc.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        mvc
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="springmvc_basic.html">
+            
+                
+                    <a href="./springmvc_basic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.1.</b>
+                        
+                        基本使用
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="tool.html">
+            
+                
+                    <a href="./tool.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        开发工具
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="tool_idea.html">
+            
+                
+                    <a href="./tool_idea.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        IDEA
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    本书使用 GitBook 发布
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >Notes</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="webxml-&#x914D;&#x7F6E;"><a name="webxml-&#x914D;&#x7F6E;" class="plugin-anchor" href="#webxml-&#x914D;&#x7F6E;"><span class="fa fa-link"></span></a>web.xml &#x914D;&#x7F6E;</h2>
+<ul>
+<li><a href="#&#x52A0;&#x8F7D;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x52A0;&#x8F7D;Spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li>
+<li><a href="#&#x914D;&#x7F6E;dispatcherservlet">&#x914D;&#x7F6E;DispatcherServlet</a></li>
+<li><a href="#&#x914D;&#x7F6E;encoding">&#x914D;&#x7F6E;encoding</a></li>
+<li><a href="#&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;">&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</a></li>
+</ul>
+<h3 id="&#x52A0;&#x8F7D;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><a name="&#x52A0;&#x8F7D;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x52A0;&#x8F7D;spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;"><span class="fa fa-link"></span></a>&#x52A0;&#x8F7D;Spring&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p><strong>applicationContext.xml&#x653E;&#x5230;WEB-INF&#x4E0B;</strong></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>WEB-INF/applicationContext.xml<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">context-param</span>&gt;</span>
+</code></pre>
+<p><strong>applicaitonContext.xml&#x653E;&#x5230;resources&#x6587;&#x4EF6;&#x5939;&#x4E2D;</strong></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>classpath:applicationContext.xml<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">context-param</span>&gt;</span>
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;dispatcherservlet"><a name="&#x914D;&#x7F6E;dispatcherservlet" class="plugin-anchor" href="#&#x914D;&#x7F6E;dispatcherservlet"><span class="fa fa-link"></span></a>&#x914D;&#x7F6E;DispatcherServlet</h3>
+<p><strong>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x653E;&#x5230;WEB-INF&#x4E0B;, &#x6587;&#x4EF6;&#x540D;&#x4E3A;${servlet-name}-servlet.xml</strong></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">servlet</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-name</span>&gt;</span>spring<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">load-on-startup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">load-on-startup</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">servlet</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">servlet-mapping</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-name</span>&gt;</span>spring<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">url-pattern</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-title">url-pattern</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-mapping</span>&gt;</span>
+</code></pre>
+<p><strong>&#x6307;&#x5B9A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;</strong></p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">servlet</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-name</span>&gt;</span>spring<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-class</span>&gt;</span>org.springframework.web.servlet.DispatcherServlet<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">init-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>contextConfigLocation<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>classpath:spring-servlet.xml<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">load-on-startup</span>&gt;</span>1<span class="hljs-tag">&lt;/<span class="hljs-title">load-on-startup</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">servlet</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">servlet-mapping</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">servlet-name</span>&gt;</span>spring<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">url-pattern</span>&gt;</span>/<span class="hljs-tag">&lt;/<span class="hljs-title">url-pattern</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">servlet-mapping</span>&gt;</span>
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;encoding"><a name="&#x914D;&#x7F6E;encoding" class="plugin-anchor" href="#&#x914D;&#x7F6E;encoding"><span class="fa fa-link"></span></a>&#x914D;&#x7F6E;encoding</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">filter</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">filter-name</span>&gt;</span>encodingFilter<span class="hljs-tag">&lt;/<span class="hljs-title">filter-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="hljs-tag">&lt;/<span class="hljs-title">filter-class</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">init-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>encoding<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>UTF-8<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">init-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">init-param</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>forceEncoding<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">init-param</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">filter</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-title">filter-mapping</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">filter-name</span>&gt;</span>encodingFilter<span class="hljs-tag">&lt;/<span class="hljs-title">filter-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">url-pattern</span>&gt;</span>/*<span class="hljs-tag">&lt;/<span class="hljs-title">url-pattern</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">filter-mapping</span>&gt;</span>
+</code></pre>
+<h3 id="&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><a name="&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</h3>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">context-param</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>webAppRootKey<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>ft.webapp<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">context-param</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">listener</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">listener-class</span>&gt;</span>org.springframework.web.util.WebAppRootListener<span class="hljs-tag">&lt;/<span class="hljs-title">listener-class</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">listener</span>&gt;</span>
+</code></pre>
+<p>&#x5728;&#x9879;&#x76EE;&#x4E2D;&#x4F7F;&#x7528;<code>System.getProperty(&quot;ft.webapp&quot;)</code>&#x6765;&#x83B7;&#x5F97;&#x9879;&#x76EE;&#x8DEF;&#x5F84;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./spring.html" class="navigation navigation-prev " aria-label="Previous page: Spring"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./springmvc.html" class="navigation navigation-next " aria-label="Next page: mvc"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search-pro/search-pro.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/notes"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"anchors":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2},"livereload":{}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
