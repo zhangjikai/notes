@@ -4,8 +4,10 @@
 - [Maven](#maven)
 - [Git](#git)
 - [Spring](#spring)
-    - [MVC](#MVC)
+    - [MVC](#mvc)
+- [Java](#java)
 - [开发工具](#开发工具)
+
 
 ## Maven
 - [基本使用](Maven/maven_basicuse.md)
@@ -31,7 +33,15 @@
 ### MVC
 - [基本使用](Spring/MVC/springmvc_basic.md)
     - [返回页面的两种方式](Spring/MVC/springmvc_basic.md#返回页面的两种方式)
-    
+
+## Java
+- [路径相关](Java/java_path.md)
+    - [获得运行时的绝对路径](Java/java_path.md#获得运行时的绝对路径)
+    - [访问maven中resources中的文件](Java/java_path.md#访问maven中resources中的文件)
+    - [获得系统的路径分隔符](Java/java_path.md#获得系统的路径分隔符)
+- [日志相关](Java/java_log.md)
+    - [log4j.properties 示例](Java/java_log.md#log4j.properties 示例)
+
 ## 开发工具
 - [IDEA](开发工具/tool_idea.md)
     - [自动生成 serialVersionUID](开发工具/tool_idea.md#自动生成 serialversionuid)

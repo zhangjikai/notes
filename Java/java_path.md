@@ -1,0 +1,20 @@
+## 路径相关
+* [获得运行时的绝对路径](#获得运行时的绝对路径)
+* [访问maven中resources中的文件](#访问maven中resources中的文件)
+* [获得系统的路径分隔符](#获得系统的路径分隔符)
+
+
+#### 获得运行时的绝对路径
+```java
+ (new File("").getAbsolutePath()) 
+```
+#### 访问maven中resources中的文件
+```java
+InputStream in = SpellCheckController.class.getClassLoader().getResourceAsStream("rules-en-English.xml")
+```
+
+#### 获得系统的路径分隔符
+```java
+System.getProperty("file.separator")
+```
+
