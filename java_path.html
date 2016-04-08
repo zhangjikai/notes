@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>IDEA | Notes</title>
+        <title>路径 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -43,8 +43,10 @@
         
     
     
+    <link rel="next" href="./java_log.html" />
     
-    <link rel="prev" href="./tool.html" />
+    
+    <link rel="prev" href="./java.html" />
     
 
         
@@ -53,9 +55,9 @@
         
         
     <div class="book"
-        data-level="5.1"
-        data-chapter-title="IDEA"
-        data-filepath="tool_idea.md"
+        data-level="4.1"
+        data-chapter-title="路径"
+        data-filepath="java_path.md"
         data-basepath="."
         data-revision="Fri Apr 08 2016 18:00:22 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -268,7 +270,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="java_path.html">
+        <li class="chapter active" data-level="4.1" data-path="java_path.html">
             
                 
                     <a href="./java_path.html">
@@ -319,7 +321,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="tool_idea.html">
+        <li class="chapter " data-level="5.1" data-path="tool_idea.html">
             
                 
                     <a href="./tool_idea.html">
@@ -372,14 +374,22 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="idea"><a name="idea" class="plugin-anchor" href="#idea"><span class="fa fa-link"></span></a>IDEA</h2>
+                        <h2 id="&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><a name="&#x8DEF;&#x5F84;&#x76F8;&#x5173;" class="plugin-anchor" href="#&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><span class="fa fa-link"></span></a>&#x8DEF;&#x5F84;&#x76F8;&#x5173;</h2>
 <ul>
-<li><a href="#&#x81EA;&#x52A8;&#x751F;&#x6210; serialversionuid">&#x81EA;&#x52A8;&#x751F;&#x6210; serialVersionUID</a></li>
+<li><a href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;">&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</a></li>
+<li><a href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;">&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</a></li>
+<li><a href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;">&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</a></li>
 </ul>
-<h3 id="&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid"><a name="&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid" class="plugin-anchor" href="#&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid"><span class="fa fa-link"></span></a>&#x81EA;&#x52A8;&#x751F;&#x6210; serialVersionUID</h3>
-<pre><code>File -&gt; settings... -&gt;Editor -&gt; Inspsctions
-&#x52FE;&#x9009; Java -&gt; Serialization issues -&gt; Serializable class without &apos;serialVersionUID&apos;
+<h4 id="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><a name="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</h4>
+<pre><code class="lang-java"> (<span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;&quot;</span>).getAbsolutePath())
 </code></pre>
+<h4 id="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><a name="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><span class="fa fa-link"></span></a>&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</h4>
+<pre><code class="lang-java">InputStream in = SpellCheckController.class.getClassLoader().getResourceAsStream(<span class="hljs-string">&quot;rules-en-English.xml&quot;</span>)
+</code></pre>
+<h4 id="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><a name="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</h4>
+<pre><code class="lang-java">System.getProperty(<span class="hljs-string">&quot;file.separator&quot;</span>)
+</code></pre>
+
                     
                     </section>
                 
@@ -389,8 +399,10 @@
         </div>
 
         
-        <a href="./tool.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 开发工具"><i class="fa fa-angle-left"></i></a>
+        <a href="./java.html" class="navigation navigation-prev " aria-label="Previous page: Java"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="./java_log.html" class="navigation navigation-next " aria-label="Next page: 日志"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

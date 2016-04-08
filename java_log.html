@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>IDEA | Notes</title>
+        <title>日志 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -43,8 +43,10 @@
         
     
     
+    <link rel="next" href="./tool.html" />
     
-    <link rel="prev" href="./tool.html" />
+    
+    <link rel="prev" href="./java_path.html" />
     
 
         
@@ -53,9 +55,9 @@
         
         
     <div class="book"
-        data-level="5.1"
-        data-chapter-title="IDEA"
-        data-filepath="tool_idea.md"
+        data-level="4.2"
+        data-chapter-title="日志"
+        data-filepath="java_log.md"
         data-basepath="."
         data-revision="Fri Apr 08 2016 18:00:22 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -283,7 +285,7 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="java_log.html">
+        <li class="chapter active" data-level="4.2" data-path="java_log.html">
             
                 
                     <a href="./java_log.html">
@@ -319,7 +321,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="5.1" data-path="tool_idea.html">
+        <li class="chapter " data-level="5.1" data-path="tool_idea.html">
             
                 
                     <a href="./tool_idea.html">
@@ -372,14 +374,24 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="idea"><a name="idea" class="plugin-anchor" href="#idea"><span class="fa fa-link"></span></a>IDEA</h2>
+                        <h2 id="&#x65E5;&#x5FD7;"><a name="&#x65E5;&#x5FD7;" class="plugin-anchor" href="#&#x65E5;&#x5FD7;"><span class="fa fa-link"></span></a>&#x65E5;&#x5FD7;</h2>
 <ul>
-<li><a href="#&#x81EA;&#x52A8;&#x751F;&#x6210; serialversionuid">&#x81EA;&#x52A8;&#x751F;&#x6210; serialVersionUID</a></li>
+<li><a href="#log4j.properties &#x793A;&#x4F8B;">log4j.properties &#x793A;&#x4F8B;</a></li>
 </ul>
-<h3 id="&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid"><a name="&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid" class="plugin-anchor" href="#&#x81EA;&#x52A8;&#x751F;&#x6210;-serialversionuid"><span class="fa fa-link"></span></a>&#x81EA;&#x52A8;&#x751F;&#x6210; serialVersionUID</h3>
-<pre><code>File -&gt; settings... -&gt;Editor -&gt; Inspsctions
-&#x52FE;&#x9009; Java -&gt; Serialization issues -&gt; Serializable class without &apos;serialVersionUID&apos;
+<h4 id="log4jproperties-&#x793A;&#x4F8B;"><a name="log4jproperties-&#x793A;&#x4F8B;" class="plugin-anchor" href="#log4jproperties-&#x793A;&#x4F8B;"><span class="fa fa-link"></span></a>log4j.properties &#x793A;&#x4F8B;</h4>
+<pre><code class="lang-c#">#config root logger
+log4j.rootLogger = INFO,system.out
+log4j.appender.system.out=org.apache.log4j.ConsoleAppender
+log4j.appender.system.out.layout=org.apache.log4j.PatternLayout
+log4j.appender.system.out.layout.ConversionPattern=%5p{%F:%L}-%m%n
+
+#config this Project.file logger
+log4j.logger.thisProject.file=INFO,thisProject.file.out
+log4j.appender.thisProject.file.out=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.thisProject.file.out.File=logContentFile.log
+log4j.appender.thisProject.file.out.layout=org.apache.log4j.PatternLayout
 </code></pre>
+
                     
                     </section>
                 
@@ -389,8 +401,10 @@
         </div>
 
         
-        <a href="./tool.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 开发工具"><i class="fa fa-angle-left"></i></a>
+        <a href="./java_path.html" class="navigation navigation-prev " aria-label="Previous page: 路径"><i class="fa fa-angle-left"></i></a>
         
+        
+        <a href="./tool.html" class="navigation navigation-next " aria-label="Next page: 开发工具"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
