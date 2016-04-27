@@ -2,11 +2,13 @@
 主要记录平时遇到的一些问题以及一些基础知识
 
 - [Maven](#maven)
+- [Markdown](#markdown)
 - [Git](#git)
 - [Spring](#spring)
     - [MVC](#mvc)
 - [Java](#java)
 - [开发工具](#开发工具)
+- [Ubuntu](#ubuntu)
 
 
 ## Maven
