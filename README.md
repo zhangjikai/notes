@@ -10,40 +10,30 @@
 
 
 ## Maven
-- [基本使用](Maven/maven_basicuse.md)
-    - [配置mirrors](Maven/maven_basicuse.md#配置mirrors)
-    - [使用properties定义变量](Maven/maven_basicuse.md#使用properties定义变量)
-    - [定义source和resources文件夹](Maven/maven_basicuse.md#定义source和resources文件夹)
-    - [配置编译JDK版本及生成独立jar包](Maven/maven_basicuse.md#配置编译jdk版本及生成独立jar包)
+- [基本使用](Maven/基本使用.md)
 
-## Git
-- [基本使用](Git/git_basicuse.md)
-    - [分支](Git/git_basicuse.md#分支)
-
-- [gitignore](Git/git_gitignore.md)
-    - [IntelliJ IDEA + MAVEN](Git/git_gitignore.md#intellij-idea--maven)
-
-## Spring
-- [web.xml配置](Spring/spring_webxml.md)
-    - [加载Spring配置文件](Spring/spring_webxml.md#加载spring配置文件)
-    - [配置DispatcherServlet](Spring/spring_webxml.md#配置dispatcherservlet)
-    - [配置encoding](Spring/spring_webxml.md#配置encoding)
-    - [获得项目的绝对路径](Spring/spring_webxml.md#获得项目的绝对路径)
+## Markdown
+- [语法](Markdown/语法.md)
+ 
    
+## Git
+- [基本使用](Git/基本使用.md)
+- [gitignore](Git/gitignore.md)
+   
+## Spring
+- [web.xml配置](Spring/web.xml配置.md)
+  
 ### MVC
-- [基本使用](Spring/MVC/springmvc_basic.md)
-    - [返回页面的两种方式](Spring/MVC/springmvc_basic.md#返回页面的两种方式)
-
+- [基本使用](Spring/MVC/基本使用.md)
+   
 ## Java
-- [路径相关](Java/java_path.md)
-    - [获得运行时的绝对路径](Java/java_path.md#获得运行时的绝对路径)
-    - [访问maven中resources中的文件](Java/java_path.md#访问maven中resources中的文件)
-    - [获得系统的路径分隔符](Java/java_path.md#获得系统的路径分隔符)
-- [日志相关](Java/java_log.md)
-    - [log4j.properties 示例](Java/java_log.md#log4j.properties 示例)
+- [路径相关](Java/路径.md)
+- [日志相关](Java/日志.md)
+   
 
 ## 开发工具
-- [IDEA](开发工具/tool_idea.md)
-    - [自动生成 serialVersionUID](开发工具/tool_idea.md#自动生成 serialversionuid)
+- [IDEA](开发工具/IDEA.md)
 
-
+## Ubuntu
+- [命令](Ubuntu/命令.md)
+- [打开大文件](Ubuntu/打开大文件.md)
