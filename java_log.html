@@ -59,7 +59,7 @@
         data-chapter-title="日志"
         data-filepath="java_log.md"
         data-basepath="."
-        data-revision="Fri Apr 08 2016 18:00:22 GMT+0800 (CST)"
+        data-revision="Wed Apr 27 2016 20:32:39 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -341,6 +341,108 @@
             
         </li>
     
+        <li class="chapter " data-level="6" data-path="markdown.html">
+            
+                
+                    <a href="./markdown.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Markdown
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="markdown_grammer.html">
+            
+                
+                    <a href="./markdown_grammer.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        语法
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="markdown_style.html">
+            
+                
+                    <a href="./markdown_style.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        样式
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="ubuntu.html">
+            
+                
+                    <a href="./ubuntu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Ubuntu
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1" data-path="ubuntu_commad.html">
+            
+                
+                    <a href="./ubuntu_commad.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.1.</b>
+                        
+                        命令
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="ubuntu_largefile.html">
+            
+                
+                    <a href="./ubuntu_largefile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.2.</b>
+                        
+                        打开大文件
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
 
 
             
@@ -379,16 +481,16 @@
 <li><a href="#log4j.properties &#x793A;&#x4F8B;">log4j.properties &#x793A;&#x4F8B;</a></li>
 </ul>
 <h4 id="log4jproperties-&#x793A;&#x4F8B;"><a name="log4jproperties-&#x793A;&#x4F8B;" class="plugin-anchor" href="#log4jproperties-&#x793A;&#x4F8B;"><span class="fa fa-link"></span></a>log4j.properties &#x793A;&#x4F8B;</h4>
-<pre><code class="lang-c#">#config root logger
+<pre><code class="lang-c"><span class="hljs-preprocessor">#config root logger</span>
 log4j.rootLogger = INFO,system.out
 log4j.appender.system.out=org.apache.log4j.ConsoleAppender
 log4j.appender.system.out.layout=org.apache.log4j.PatternLayout
-log4j.appender.system.out.layout.ConversionPattern=%5p{%F:%L}-%m%n
+log4j.appender.system.out.layout.ConversionPattern=%<span class="hljs-number">5</span>p{%F:%L}-%m%n
 
-#config this Project.file logger
+<span class="hljs-preprocessor">#config this Project.file logger</span>
 log4j.logger.thisProject.file=INFO,thisProject.file.out
 log4j.appender.thisProject.file.out=org.apache.log4j.DailyRollingFileAppender
-log4j.appender.thisProject.file.out.File=logContentFile.log
+log4j.appender.thisProject.file.out.File=logContentFile.<span class="hljs-built_in">log</span>
 log4j.appender.thisProject.file.out.layout=org.apache.log4j.PatternLayout
 </code></pre>
 

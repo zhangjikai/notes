@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-<url> <loc>http://notes.zhangjikai.com/java_path.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/markdown_style.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/index.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/git.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/git_basicuse.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/git_gitignore.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/java.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/java_log.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/java_path.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/markdown.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/markdown_grammer.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/maven.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/maven_basicuse.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/spring.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -15,4 +18,7 @@
 <url> <loc>http://notes.zhangjikai.com/springmvc_basic.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/tool.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://notes.zhangjikai.com/tool_idea.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/ubuntu.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/ubuntu_commad.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://notes.zhangjikai.com/ubuntu_largefile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>

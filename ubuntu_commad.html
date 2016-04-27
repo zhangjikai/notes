@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>路径 | Notes</title>
+        <title>命令 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -43,10 +43,10 @@
         
     
     
-    <link rel="next" href="./java_log.html" />
+    <link rel="next" href="./ubuntu_largefile.html" />
     
     
-    <link rel="prev" href="./java.html" />
+    <link rel="prev" href="./ubuntu.html" />
     
 
         
@@ -55,9 +55,9 @@
         
         
     <div class="book"
-        data-level="4.1"
-        data-chapter-title="路径"
-        data-filepath="java_path.md"
+        data-level="7.1"
+        data-chapter-title="命令"
+        data-filepath="ubuntu_commad.md"
         data-basepath="."
         data-revision="Wed Apr 27 2016 20:32:39 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -270,7 +270,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.1" data-path="java_path.html">
+        <li class="chapter " data-level="4.1" data-path="java_path.html">
             
                 
                     <a href="./java_path.html">
@@ -408,7 +408,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1" data-path="ubuntu_commad.html">
+        <li class="chapter active" data-level="7.1" data-path="ubuntu_commad.html">
             
                 
                     <a href="./ubuntu_commad.html">
@@ -476,20 +476,72 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><a name="&#x8DEF;&#x5F84;&#x76F8;&#x5173;" class="plugin-anchor" href="#&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><span class="fa fa-link"></span></a>&#x8DEF;&#x5F84;&#x76F8;&#x5173;</h2>
+                        <h2 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="plugin-anchor" href="#&#x547D;&#x4EE4;"><span class="fa fa-link"></span></a>&#x547D;&#x4EE4;</h2>
 <ul>
-<li><a href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;">&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</a></li>
-<li><a href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;">&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</a></li>
-<li><a href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;">&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</a></li>
+<li><a href="#scp">scp</a></li>
+<li><a href="#export">export</a></li>
+<li><a href="#&#x91CD;&#x542F;&#x7F51;&#x5361;">&#x91CD;&#x542F;&#x7F51;&#x5361;</a></li>
+<li><a href="#shadowsocks">shadowsocks</a></li>
+<li><a href="#&#x5185;&#x5B58;">&#x5185;&#x5B58;</a></li>
 </ul>
-<h4 id="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><a name="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</h4>
-<pre><code class="lang-java"> (<span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;&quot;</span>).getAbsolutePath())
+<h3 id="scp"><a name="scp" class="plugin-anchor" href="#scp"><span class="fa fa-link"></span></a>scp</h3>
+<p>&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;</p>
+<p><strong>&#x590D;&#x5236;&#x6587;&#x4EF6;</strong>  </p>
+<pre><code class="lang-bash">scp <span class="hljs-built_in">local</span>_file remote_username@remote_ip:remote_folder  
+scp <span class="hljs-built_in">local</span>_file remote_username@remote_ip:remote_file
 </code></pre>
-<h4 id="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><a name="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><span class="fa fa-link"></span></a>&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</h4>
-<pre><code class="lang-java">InputStream in = SpellCheckController.class.getClassLoader().getResourceAsStream(<span class="hljs-string">&quot;rules-en-English.xml&quot;</span>)
+<p><strong>&#x590D;&#x5236;&#x76EE;&#x5F55;</strong></p>
+<pre><code class="lang-bash">scp -r <span class="hljs-built_in">local</span>_folder remote_username@remote_ip:remote_folder
 </code></pre>
-<h4 id="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><a name="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</h4>
-<pre><code class="lang-java">System.getProperty(<span class="hljs-string">&quot;file.separator&quot;</span>)
+<p><strong>&#x547D;&#x4EE4;&#x53C2;&#x6570;</strong></p>
+<ul>
+<li>-P : &#x6307;&#x5B9A;&#x7AEF;&#x53E3;&#x53F7;</li>
+<li>-1 : &#x5F3A;&#x5236;scp&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x534F;&#x8BAE;ssh1  </li>
+<li>-2 : &#x5F3A;&#x5236;scp&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x534F;&#x8BAE;ssh2  </li>
+<li>-4 : &#x5F3A;&#x5236;scp&#x547D;&#x4EE4;&#x53EA;&#x4F7F;&#x7528;IPv4&#x5BFB;&#x5740;  </li>
+<li>-6 : &#x5F3A;&#x5236;scp&#x547D;&#x4EE4;&#x53EA;&#x4F7F;&#x7528;IPv6&#x5BFB;&#x5740; </li>
+</ul>
+<h3 id="export"><a name="export" class="plugin-anchor" href="#export"><span class="fa fa-link"></span></a>export</h3>
+<p><strong>&#x8BED;&#x6CD5;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">export</span> [-fnp] [&#x53D8;&#x91CF;&#x540D;&#x79F0;]=[&#x53D8;&#x91CF;&#x503C;]
+</code></pre>
+<ul>
+<li><strong>-f</strong> : &#x4EE3;&#x8868;[&#x53D8;&#x91CF;&#x540D;&#x79F0;]&#x4E2D;&#x4E3A;&#x51FD;&#x6570;&#x540D;&#x79F0;</li>
+<li><strong>-n</strong> : &#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x53D8;&#x91CF;&#x5B9E;&#x9645;&#x4E0A;&#x5E76;&#x672A;&#x5220;&#x9664;&#xFF0C;&#x53EA;&#x662F;&#x4E0D;&#x4F1A;&#x8F93;&#x51FA;&#x5230;&#x540E;&#x7EED;&#x6307;&#x4EE4;&#x7684;&#x6267;&#x884C;&#x73AF;&#x5883;&#x4E2D;</li>
+<li><strong>-p</strong> : &#x5217;&#x51FA;&#x6240;&#x6709;&#x7684;shell&#x8D4B;&#x4E88;&#x7A0B;&#x5E8F;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;</li>
+</ul>
+<h3 id="&#x91CD;&#x542F;&#x7F51;&#x5361;"><a name="&#x91CD;&#x542F;&#x7F51;&#x5361;" class="plugin-anchor" href="#&#x91CD;&#x542F;&#x7F51;&#x5361;"><span class="fa fa-link"></span></a>&#x91CD;&#x542F;&#x7F51;&#x5361;</h3>
+<p><strong>&#x67E5;&#x770B;&#x7F51;&#x5361;&#x4FE1;&#x606F;</strong></p>
+<pre><code>ifconfig
+</code></pre><p><strong>&#x91CD;&#x542F;&#x7F51;&#x5361;</strong></p>
+<pre><code>ifconfig eth0 down
+ifconfig eth0 up
+</code></pre><p>&#x6216;&#x8005;</p>
+<pre><code>/etc/init.d/network restart
+</code></pre><h3 id="shadowsocks"><a name="shadowsocks" class="plugin-anchor" href="#shadowsocks"><span class="fa fa-link"></span></a>shadowsocks</h3>
+<p><strong>&#x914D;&#x7F6E;</strong></p>
+<pre><code class="lang-json">  {
+    <span class="hljs-string">&quot;server&quot;</span>:<span class="hljs-string">&quot;my_server_ip&quot;</span>,
+    <span class="hljs-string">&quot;server_port&quot;</span>:<span class="hljs-number">8388</span>,
+    <span class="hljs-string">&quot;local_address&quot;</span>: <span class="hljs-string">&quot;127.0.0.1&quot;</span>,
+    <span class="hljs-string">&quot;local_port&quot;</span>:<span class="hljs-number">1080</span>,
+    <span class="hljs-string">&quot;password&quot;</span>:<span class="hljs-string">&quot;mypassword&quot;</span>,
+    <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">300</span>,
+    <span class="hljs-string">&quot;method&quot;</span>:<span class="hljs-string">&quot;aes-256-cfb&quot;</span>,
+  }
+</code></pre>
+<p><strong>&#x540E;&#x53F0;&#x8FD0;&#x884C;</strong></p>
+<pre><code class="lang-bash">(sslocal -c shadow.json &amp;)
+</code></pre>
+<p><strong>&#x5173;&#x95ED;shadowsocks</strong></p>
+<pre><code class="lang-bash">pkill sslocal
+</code></pre>
+<h3 id="&#x5185;&#x5B58;"><a name="&#x5185;&#x5B58;" class="plugin-anchor" href="#&#x5185;&#x5B58;"><span class="fa fa-link"></span></a>&#x5185;&#x5B58;</h3>
+<p><strong>&#x67E5;&#x770B;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x60C5;&#x51B5;</strong></p>
+<pre><code class="lang-bash">free -m
+</code></pre>
+<p><strong>&#x6E05;&#x7406;&#x5185;&#x5B58;</strong></p>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-number">1</span> &gt; /proc/sys/vm/drop_caches
 </code></pre>
 
                     
@@ -501,10 +553,10 @@
         </div>
 
         
-        <a href="./java.html" class="navigation navigation-prev " aria-label="Previous page: Java"><i class="fa fa-angle-left"></i></a>
+        <a href="./ubuntu.html" class="navigation navigation-prev " aria-label="Previous page: Ubuntu"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./java_log.html" class="navigation navigation-next " aria-label="Next page: 日志"><i class="fa fa-angle-right"></i></a>
+        <a href="./ubuntu_largefile.html" class="navigation navigation-next " aria-label="Next page: 打开大文件"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

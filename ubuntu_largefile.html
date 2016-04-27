@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>路径 | Notes</title>
+        <title>打开大文件 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -43,10 +43,8 @@
         
     
     
-    <link rel="next" href="./java_log.html" />
     
-    
-    <link rel="prev" href="./java.html" />
+    <link rel="prev" href="./ubuntu_commad.html" />
     
 
         
@@ -55,9 +53,9 @@
         
         
     <div class="book"
-        data-level="4.1"
-        data-chapter-title="路径"
-        data-filepath="java_path.md"
+        data-level="7.2"
+        data-chapter-title="打开大文件"
+        data-filepath="ubuntu_largefile.md"
         data-basepath="."
         data-revision="Wed Apr 27 2016 20:32:39 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -270,7 +268,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="4.1" data-path="java_path.html">
+        <li class="chapter " data-level="4.1" data-path="java_path.html">
             
                 
                     <a href="./java_path.html">
@@ -423,7 +421,7 @@
             
         </li>
     
-        <li class="chapter " data-level="7.2" data-path="ubuntu_largefile.html">
+        <li class="chapter active" data-level="7.2" data-path="ubuntu_largefile.html">
             
                 
                     <a href="./ubuntu_largefile.html">
@@ -476,21 +474,22 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><a name="&#x8DEF;&#x5F84;&#x76F8;&#x5173;" class="plugin-anchor" href="#&#x8DEF;&#x5F84;&#x76F8;&#x5173;"><span class="fa fa-link"></span></a>&#x8DEF;&#x5F84;&#x76F8;&#x5173;</h2>
-<ul>
-<li><a href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;">&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</a></li>
-<li><a href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;">&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</a></li>
-<li><a href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;">&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</a></li>
-</ul>
-<h4 id="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><a name="&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x8FD0;&#x884C;&#x65F6;&#x7684;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</h4>
-<pre><code class="lang-java"> (<span class="hljs-keyword">new</span> File(<span class="hljs-string">&quot;&quot;</span>).getAbsolutePath())
+                        <h2 id="&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;"><a name="&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;"><span class="fa fa-link"></span></a>&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;</h2>
+<h3 id="glogg&#x53EA;&#x662F;&#x67E5;&#x770B;"><a name="glogg&#x53EA;&#x662F;&#x67E5;&#x770B;" class="plugin-anchor" href="#glogg&#x53EA;&#x662F;&#x67E5;&#x770B;"><span class="fa fa-link"></span></a>glogg(&#x53EA;&#x662F;&#x67E5;&#x770B;)</h3>
+<p><strong>&#x5B89;&#x88C5;</strong></p>
+<pre><code class="lang-bash">sudo apt-get install glogg
 </code></pre>
-<h4 id="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><a name="&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;" class="plugin-anchor" href="#&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;"><span class="fa fa-link"></span></a>&#x8BBF;&#x95EE;maven&#x4E2D;resources&#x4E2D;&#x7684;&#x6587;&#x4EF6;</h4>
-<pre><code class="lang-java">InputStream in = SpellCheckController.class.getClassLoader().getResourceAsStream(<span class="hljs-string">&quot;rules-en-English.xml&quot;</span>)
+<p><strong>&#x4F7F;&#x7528;</strong></p>
+<pre><code class="lang-bash">glogg text.txt
 </code></pre>
-<h4 id="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><a name="&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;" class="plugin-anchor" href="#&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;"><span class="fa fa-link"></span></a>&#x83B7;&#x5F97;&#x7CFB;&#x7EDF;&#x7684;&#x8DEF;&#x5F84;&#x5206;&#x9694;&#x7B26;</h4>
-<pre><code class="lang-java">System.getProperty(<span class="hljs-string">&quot;file.separator&quot;</span>)
+<h3 id="joe&#x53EF;&#x7F16;&#x8F91;"><a name="joe&#x53EF;&#x7F16;&#x8F91;" class="plugin-anchor" href="#joe&#x53EF;&#x7F16;&#x8F91;"><span class="fa fa-link"></span></a>JOE(&#x53EF;&#x7F16;&#x8F91;)</h3>
+<p><strong>&#x5B89;&#x88C5;</strong></p>
+<pre><code class="lang-bash">sudo apt-get install joe
 </code></pre>
+<p><strong>&#x4F7F;&#x7528;</strong></p>
+<pre><code class="lang-bash">joe test.txt
+</code></pre>
+<p>&#x4F7F;&#x7528;joe&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x540E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7F16;&#x8F91;&#x6587;&#x4EF6;, &#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x4F8B;&#x5982;&#x8DF3;&#x8F6C;&#x3001;&#x641C;&#x7D22;&#x7B49;&#x9700;&#x8981;&#x914D;&#x5408; <code>ctrl</code> &#x952E;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x4F7F;&#x7528; <code>ctrl + k + h</code>&#x6765;&#x6253;&#x5F00;&#x5E2E;&#x52A9;</p>
 
                     
                     </section>
@@ -501,10 +500,8 @@
         </div>
 
         
-        <a href="./java.html" class="navigation navigation-prev " aria-label="Previous page: Java"><i class="fa fa-angle-left"></i></a>
+        <a href="./ubuntu_commad.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 命令"><i class="fa fa-angle-left"></i></a>
         
-        
-        <a href="./java_log.html" class="navigation navigation-next " aria-label="Next page: 日志"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
