@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>前言 | Notes</title>
+        <title>基础知识 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="make learning notes">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
         <meta name="author" content="zhangjikai">
         
@@ -43,8 +43,10 @@
         
     
     
-    <link rel="next" href="./apache.html" />
+    <link rel="next" href="./spring.html" />
     
+    
+    <link rel="prev" href="./nodejs.html" />
     
 
         
@@ -53,9 +55,9 @@
         
         
     <div class="book"
-        data-level="0"
-        data-chapter-title="前言"
-        data-filepath="README.md"
+        data-level="7.1"
+        data-chapter-title="基础知识"
+        data-filepath="nodejs_basic.md"
         data-basepath="."
         data-revision="Mon May 09 2016 21:32:37 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -80,7 +82,7 @@
 
             
     
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
                     <a href="./index.html">
@@ -370,7 +372,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="7.1" data-path="nodejs_basic.html">
+        <li class="chapter active" data-level="7.1" data-path="nodejs_basic.html">
             
                 
                     <a href="./nodejs_basic.html">
@@ -582,19 +584,18 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="notes"><a name="notes" class="plugin-anchor" href="#notes"><span class="fa fa-link"></span></a>Notes</h2>
-<p>&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x5E73;&#x65F6;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x95EE;&#x9898;&#x4EE5;&#x53CA;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x77E5;&#x8BC6;.</p>
+                        <h2 id="&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><a name="&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="plugin-anchor" href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><span class="fa fa-link"></span></a>&#x57FA;&#x7840;&#x77E5;&#x8BC6;</h2>
 <ul>
-<li><a href="maven.html">Maven</a></li>
-<li><a href="git.html">Git</a></li>
-<li><a href="spring.html">Spring</a></li>
-<li><a href="java.html">Java</a></li>
-<li><a href="tool.html">&#x5F00;&#x53D1;&#x5DE5;&#x5177;</a><ul>
-<li><a href="tool_idea.html">IDEA</a></li>
-</ul>
-</li>
-<li><a href="markdown.html">Markdown</a></li>
-<li><a href="ubuntu.html">Ubuntu</a></li>
+<li><a href="#&#x7248;&#x672C;&#x53F7;">&#x7248;&#x672C;&#x53F7;</a><h4 id="&#x7248;&#x672C;&#x53F7;"><a name="&#x7248;&#x672C;&#x53F7;" class="plugin-anchor" href="#&#x7248;&#x672C;&#x53F7;"><span class="fa fa-link"></span></a>&#x7248;&#x672C;&#x53F7;</h4>
+<pre><code class="lang-bash">*: &#x4EFB;&#x610F;&#x7248;&#x672C;
+<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &#x6307;&#x5B9A;&#x7248;&#x672C;
+~<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &gt;=<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span> &amp;&amp; &lt; <span class="hljs-number">1.2</span>.<span class="hljs-number">0</span>
+^<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &gt;=<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span> &amp;&amp; &lt; <span class="hljs-number">2.0</span>.<span class="hljs-number">0</span>
+</code></pre>
+&#x5176;&#x4E2D; <code>~</code> &#x548C; <code>^</code> &#x4E24;&#x4E2A;&#x524D;&#x7F00;&#x8BA9;&#x4EBA;&#x6BD4;&#x8F83;&#x8FF7;&#x60D1;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x6765;&#x8BF4;&#xFF1A;  </li>
+<li><code>~</code> &#x524D;&#x7F00;&#x8868;&#x793A;&#xFF0C;&#x5B89;&#x88C5;&#x5927;&#x4E8E;&#x6307;&#x5B9A;&#x7684;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x5339;&#x914D;&#x5230; <code>x.y.z</code> &#x4E2D; <code>z</code> &#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x3002;  </li>
+<li><code>^</code> &#x524D;&#x7F00;&#x5728; <code>^0.y.z</code> &#x65F6;&#x7684;&#x8868;&#x73B0;&#x548C; <code>~0.y.z</code> &#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x7136;&#x800C; <code>^1.y.z</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A; &#x5339;&#x914D;&#x5230; <code>y</code> &#x548C; <code>z</code> &#x90FD;&#x662F;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x3002;  </li>
+<li>&#x7279;&#x6B8A;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x7248;&#x672C;&#x53F7;&#x4E3A; <code>^0.0.z</code> &#x6216;&#x8005; <code>~0.0.z</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8003;&#x8651;&#x5230; <code>0.0.z</code> &#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x7A33;&#x5B9A;&#x7248;&#x672C;&#xFF0C; &#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x76F8;&#x5F53;&#x4E8E; <code>=0.0.z</code>&#x3002;</li>
 </ul>
 
                     
@@ -606,8 +607,10 @@
         </div>
 
         
+        <a href="./nodejs.html" class="navigation navigation-prev " aria-label="Previous page: NodeJs"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./apache.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Apache"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="./spring.html" class="navigation navigation-next " aria-label="Next page: Spring"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
