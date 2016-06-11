@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>基础知识 | Notes</title>
+        <title>基本使用 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -43,10 +43,10 @@
         
     
     
-    <link rel="next" href="./python.html" />
+    <link rel="next" href="./spring.html" />
     
     
-    <link rel="prev" href="./nodejs.html" />
+    <link rel="prev" href="./python.html" />
     
 
         
@@ -55,9 +55,9 @@
         
         
     <div class="book"
-        data-level="8.1"
-        data-chapter-title="基础知识"
-        data-filepath="nodejs_basic.md"
+        data-level="9.1"
+        data-chapter-title="基本使用"
+        data-filepath="python基本使用.md"
         data-basepath="."
         data-revision="Sat Jun 11 2016 14:05:19 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -423,7 +423,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="8.1" data-path="nodejs_basic.html">
+        <li class="chapter " data-level="8.1" data-path="nodejs_basic.html">
             
                 
                     <a href="./nodejs_basic.html">
@@ -459,7 +459,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="9.1" data-path="python基本使用.html">
+        <li class="chapter active" data-level="9.1" data-path="python基本使用.html">
             
                 
                     <a href="./python基本使用.html">
@@ -671,19 +671,11 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><a name="&#x57FA;&#x7840;&#x77E5;&#x8BC6;" class="plugin-anchor" href="#&#x57FA;&#x7840;&#x77E5;&#x8BC6;"><span class="fa fa-link"></span></a>&#x57FA;&#x7840;&#x77E5;&#x8BC6;</h2>
-<ul>
-<li><a href="#&#x7248;&#x672C;&#x53F7;">&#x7248;&#x672C;&#x53F7;</a><h4 id="&#x7248;&#x672C;&#x53F7;"><a name="&#x7248;&#x672C;&#x53F7;" class="plugin-anchor" href="#&#x7248;&#x672C;&#x53F7;"><span class="fa fa-link"></span></a>&#x7248;&#x672C;&#x53F7;</h4>
-<pre><code class="lang-bash">*: &#x4EFB;&#x610F;&#x7248;&#x672C;
-<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &#x6307;&#x5B9A;&#x7248;&#x672C;
-~<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &gt;=<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span> &amp;&amp; &lt; <span class="hljs-number">1.2</span>.<span class="hljs-number">0</span>
-^<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span>: &gt;=<span class="hljs-number">1.1</span>.<span class="hljs-number">0</span> &amp;&amp; &lt; <span class="hljs-number">2.0</span>.<span class="hljs-number">0</span>
+                        <h2 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;"><a name="&#x57FA;&#x672C;&#x4F7F;&#x7528;" class="plugin-anchor" href="#&#x57FA;&#x672C;&#x4F7F;&#x7528;"><span class="fa fa-link"></span></a>&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+<h3 id="ubuntu-&#x4FEE;&#x6539;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;python&#x7248;&#x672C;"><a name="ubuntu-&#x4FEE;&#x6539;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;python&#x7248;&#x672C;" class="plugin-anchor" href="#ubuntu-&#x4FEE;&#x6539;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;python&#x7248;&#x672C;"><span class="fa fa-link"></span></a>ubuntu &#x4FEE;&#x6539;&#x7CFB;&#x7EDF;&#x9ED8;&#x8BA4;&#x7684;python&#x7248;&#x672C;</h3>
+<pre><code class="lang-bash"><span class="hljs-built_in">echo</span> <span class="hljs-built_in">alias</span> python=python3 &gt;&gt; ~/.bashrc
+<span class="hljs-built_in">source</span> ~/.bashrc
 </code></pre>
-&#x5176;&#x4E2D; <code>~</code> &#x548C; <code>^</code> &#x4E24;&#x4E2A;&#x524D;&#x7F00;&#x8BA9;&#x4EBA;&#x6BD4;&#x8F83;&#x8FF7;&#x60D1;&#xFF0C;&#x7B80;&#x5355;&#x7684;&#x6765;&#x8BF4;&#xFF1A;  </li>
-<li><code>~</code> &#x524D;&#x7F00;&#x8868;&#x793A;&#xFF0C;&#x5B89;&#x88C5;&#x5927;&#x4E8E;&#x6307;&#x5B9A;&#x7684;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#xFF0C;&#x5E76;&#x4E14;&#x5339;&#x914D;&#x5230; <code>x.y.z</code> &#x4E2D; <code>z</code> &#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x3002;  </li>
-<li><code>^</code> &#x524D;&#x7F00;&#x5728; <code>^0.y.z</code> &#x65F6;&#x7684;&#x8868;&#x73B0;&#x548C; <code>~0.y.z</code> &#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x7136;&#x800C; <code>^1.y.z</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A; &#x5339;&#x914D;&#x5230; <code>y</code> &#x548C; <code>z</code> &#x90FD;&#x662F;&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;&#x3002;  </li>
-<li>&#x7279;&#x6B8A;&#x7684;&#x662F;&#xFF0C;&#x5F53;&#x7248;&#x672C;&#x53F7;&#x4E3A; <code>^0.0.z</code> &#x6216;&#x8005; <code>~0.0.z</code> &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8003;&#x8651;&#x5230; <code>0.0.z</code> &#x662F;&#x4E00;&#x4E2A;&#x4E0D;&#x7A33;&#x5B9A;&#x7248;&#x672C;&#xFF0C; &#x6240;&#x4EE5;&#x5B83;&#x4EEC;&#x90FD;&#x76F8;&#x5F53;&#x4E8E; <code>=0.0.z</code>&#x3002;</li>
-</ul>
 
                     
                     </section>
@@ -694,10 +686,10 @@
         </div>
 
         
-        <a href="./nodejs.html" class="navigation navigation-prev " aria-label="Previous page: NodeJs"><i class="fa fa-angle-left"></i></a>
+        <a href="./python.html" class="navigation navigation-prev " aria-label="Previous page: Python"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./python.html" class="navigation navigation-next " aria-label="Next page: Python"><i class="fa fa-angle-right"></i></a>
+        <a href="./spring.html" class="navigation navigation-next " aria-label="Next page: Spring"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
