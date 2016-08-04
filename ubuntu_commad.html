@@ -29,6 +29,10 @@
         
     
         
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-katex/katex.min.css">
+        
+    
+        
         <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
         
     
@@ -59,7 +63,7 @@
         data-chapter-title="命令"
         data-filepath="ubuntu_commad.md"
         data-basepath="."
-        data-revision="Mon Jun 13 2016 15:09:09 GMT+0800 (CST)"
+        data-revision="Thu Aug 04 2016 10:13:13 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -366,6 +370,21 @@
             
         </li>
     
+        <li class="chapter " data-level="6.3" data-path="mathjax.html">
+            
+                
+                    <a href="./mathjax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        MathJax语法
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -633,8 +652,68 @@
             
         </li>
     
+        <li class="chapter " data-level="12.2" data-path="sublime_text.html">
+            
+                
+                    <a href="./sublime_text.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.2.</b>
+                        
+                        Sublime Text
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.3" data-path="conemu.html">
+            
+                
+                    <a href="./conemu.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.3.</b>
+                        
+                        ConEmu
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12.4" data-path="atom.html">
+            
+                
+                    <a href="./atom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.4.</b>
+                        
+                        Atom
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="office.html">
+            
+                
+                    <a href="./office.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Office
+                    </a>
+            
             
         </li>
     
@@ -681,10 +760,11 @@
 <li><a href="#&#x5185;&#x5B58;">&#x5185;&#x5B58;</a></li>
 <li><a href="#tree">tree</a></li>
 <li><a href="#whereis">whereis</a></li>
+<li><a href="#du_df"><code>du df</code> - &#x67E5;&#x770B;&#x786C;&#x76D8;&#x7A7A;&#x95F4;</a></li>
 </ul>
 <h3 id="scp"><a name="scp" class="plugin-anchor" href="#scp"><span class="fa fa-link"></span></a>scp</h3>
 <p>&#x8FDB;&#x884C;&#x8FDC;&#x7A0B;&#x62F7;&#x8D1D;</p>
-<p><strong>&#x590D;&#x5236;&#x6587;&#x4EF6;</strong>  </p>
+<p><strong>&#x590D;&#x5236;&#x6587;&#x4EF6;</strong></p>
 <pre><code class="lang-bash">scp <span class="hljs-built_in">local</span>_file remote_username@remote_ip:remote_folder  
 scp <span class="hljs-built_in">local</span>_file remote_username@remote_ip:remote_file
 </code></pre>
@@ -771,6 +851,13 @@ ifconfig eth0 up
 <li><strong>&#x7701;&#x7565;&#x53C2;&#x6570;</strong>&#xFF1A; &#x8FD4;&#x56DE;&#x5168;&#x90E8;&#x4FE1;&#x606F;</li>
 </ul>
 <p><a href="http://www.ruanyifeng.com/blog/2009/10/5_ways_to_search_for_files_using_the_terminal.html" target="_blank">Linux&#x7684;&#x4E94;&#x4E2A;&#x67E5;&#x627E;&#x547D;&#x4EE4;</a></p>
+<h3 id="df-du"><a name="df-du" class="plugin-anchor" href="#df-du"><span class="fa fa-link"></span></a>df du</h3>
+<p>&#x67E5;&#x770B;&#x786C;&#x76D8;&#x7A7A;&#x95F4;</p>
+<ul>
+<li><code>df -h</code> - &#x67E5;&#x770B;&#x5404;&#x5206;&#x533A;&#x5927;&#x5C0F;</li>
+<li><code>df -sh dir</code> - &#x67E5;&#x770B; dir &#x76EE;&#x5F55;&#x5927;&#x5C0F;</li>
+<li><code>df -sh *</code> - &#x67E5;&#x770B;&#x5F53;&#x524D;&#x76EE;&#x5F55;&#x4E0B;&#x7684;&#x6587;&#x4EF6;&#x548C;&#x5B50;&#x76EE;&#x5F55;&#x5927;&#x5C0F;</li>
+</ul>
 
                     
                     </section>
@@ -818,7 +905,7 @@ ifconfig eth0 up
 
 <script>
 require(["gitbook"], function(gitbook) {
-    var config = {"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/notes"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://notes.zhangjikai.com"},"anchors":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    var config = {"duoshuo":{"short_name":"zhangjkblog","theme":"default"},"search-pro":{"cutWordLib":"nodejieba","defineWord":["vim"]},"github":{"url":"https://github.com/zhangjikai/notes"},"sharing":{"weibo":true,"facebook":true,"twitter":true,"google":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"baidu":{"token":"ff100361cdce95dd4c8fb96b4009f7bc"},"sitemap":{"hostname":"http://notes.zhangjikai.com"},"anchors":{},"katex":{},"highlight":{},"fontsettings":{"theme":"white","family":"sans","size":2}};
     gitbook.start(config);
 });
 </script>
