@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>打开大文件 | Notes</title>
+        <title>软件 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -47,10 +47,10 @@
         
     
     
-    <link rel="next" href="./配置.html" />
+    <link rel="next" href="./windows.html" />
     
     
-    <link rel="prev" href="./ubuntu_commad.html" />
+    <link rel="prev" href="./配置.html" />
     
 
         
@@ -59,9 +59,9 @@
         
         
     <div class="book"
-        data-level="11.2"
-        data-chapter-title="打开大文件"
-        data-filepath="ubuntu_largefile.md"
+        data-level="11.4"
+        data-chapter-title="软件"
+        data-filepath="软件.md"
         data-basepath="."
         data-revision="Sun Nov 20 2016 15:37:30 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -601,7 +601,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.2" data-path="ubuntu_largefile.html">
+        <li class="chapter " data-level="11.2" data-path="ubuntu_largefile.html">
             
                 
                     <a href="./ubuntu_largefile.html">
@@ -631,7 +631,7 @@
             
         </li>
     
-        <li class="chapter " data-level="11.4" data-path="软件.html">
+        <li class="chapter active" data-level="11.4" data-path="软件.html">
             
                 
                     <a href="./软件.html">
@@ -873,23 +873,129 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;">&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;</h2>
-<h3 id="glogg&#x53EA;&#x662F;&#x67E5;&#x770B;">glogg(&#x53EA;&#x662F;&#x67E5;&#x770B;)</h3>
-<p><strong>&#x5B89;&#x88C5;</strong></p>
-<pre><code class="lang-bash">sudo apt-get install glogg
+                        <h2 id="&#x8F6F;&#x4EF6;">&#x8F6F;&#x4EF6;</h2>
+<!-- toc -->
+<ul>
+<li><a href="#chrome">chrome</a></li>
+<li><a href="#shadowsocks">shadowsocks</a><ul>
+<li><a href="#&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</a></li>
+<li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li>
+</ul>
+</li>
+<li><a href="#terminator">Terminator</a></li>
+<li><a href="#gdebi">GDebi</a></li>
+<li><a href="#&#x641C;&#x72D7;&#x8F93;&#x5165;&#x6CD5;">&#x641C;&#x72D7;&#x8F93;&#x5165;&#x6CD5;</a></li>
+<li><a href="#atom">Atom</a></li>
+<li><a href="#java">Java</a></li>
+<li><a href="#uget">uGet</a></li>
+<li><a href="#thunar">Thunar</a></li>
+<li><a href="#pcmanfm">PCManFM</a></li>
+<li><a href="#wps">Wps</a><ul>
+<li><a href="#&#x7F3A;&#x5C11;&#x5B57;&#x4F53;">&#x7F3A;&#x5C11;&#x5B57;&#x4F53;</a></li>
+</ul>
+</li>
+<li><a href="#sublimetext">SublimeText</a></li>
+</ul>
+<!-- toc stop -->
+<h3 id="chrome">chrome</h3>
+<pre><code class="lang-bash">wget -q -O - http://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo sh -c <span class="hljs-string">&apos;echo &quot;deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main&quot; &gt;&gt; /etc/apt/sources.list.d/google.list&apos;</span>
+sudo apt-get update
+sudo apt-get install google-chrome-stable
 </code></pre>
-<p><strong>&#x4F7F;&#x7528;</strong></p>
-<pre><code class="lang-bash">glogg text.txt
+<h3 id="shadowsocks">shadowsocks</h3>
+<h4 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h4>
+<pre><code class="lang-bash">sudo apt-get install python-gevent python-pip
+sudo pip install shadowsocks
 </code></pre>
-<h3 id="joe&#x53EF;&#x7F16;&#x8F91;">JOE(&#x53EF;&#x7F16;&#x8F91;)</h3>
-<p><strong>&#x5B89;&#x88C5;</strong></p>
-<pre><code class="lang-bash">sudo apt-get install joe
+<h4 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h4>
+<p>&#x7F16;&#x5199; <code>shadow.json</code></p>
+<pre><code class="lang-json">{    
+    <span class="hljs-string">&quot;server&quot;</span>:<span class="hljs-string">&quot;xxx&quot;</span>,
+    <span class="hljs-string">&quot;server_port&quot;</span>:xxxx,
+    <span class="hljs-string">&quot;local_port&quot;</span>:<span class="hljs-number">1080</span>,
+    <span class="hljs-string">&quot;password&quot;</span>:<span class="hljs-string">&quot;xxxx&quot;</span>,
+    <span class="hljs-string">&quot;timeout&quot;</span>:<span class="hljs-number">600</span>,
+    <span class="hljs-string">&quot;method&quot;</span>:<span class="hljs-string">&quot;AES-256-CFB&quot;</span>
+}
 </code></pre>
-<p><strong>&#x4F7F;&#x7528;</strong></p>
-<pre><code class="lang-bash">joe test.txt
+<p>&#x542F;&#x52A8;&#xFF0C;&#x52A0;&#x4E0A; <code>(&amp;)</code> &#x4F1A;&#x5728;&#x540E;&#x53F0;&#x6267;&#x884C;</p>
+<pre><code class="lang-bash">(sslocal -c shadow.json &amp;)
 </code></pre>
-<p>&#x4F7F;&#x7528;joe&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x540E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7F16;&#x8F91;&#x6587;&#x4EF6;, &#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x4F8B;&#x5982;&#x8DF3;&#x8F6C;&#x3001;&#x641C;&#x7D22;&#x7B49;&#x9700;&#x8981;&#x914D;&#x5408; <code>ctrl</code> &#x952E;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x4F7F;&#x7528; <code>ctrl + k + h</code>&#x6765;&#x6253;&#x5F00;&#x5E2E;&#x52A9;</p>
+<h3 id="terminator">Terminator</h3>
+<pre><code class="lang-bash">sudo apt-get install terminator
+</code></pre>
+<p><a href="http://www.cnblogs.com/zhangjk1993/p/5204616.html" target="_blank">&#x4F7F;&#x7528;</a></p>
+<h3 id="gdebi">GDebi</h3>
+<p>&#x5B89;&#x88C5; deb &#x8F6F;&#x4EF6;&#x5305;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x5B89;&#x88C5; deb &#x5305;&#x6240;&#x9700;&#x8981;&#x7684;&#x4F9D;&#x8D56;
+<strong>&#x5B89;&#x88C5;</strong></p>
+<pre><code class="lang-bash">sudo apt-get install gdebi
+</code></pre>
+<p><strong>&#x4F7F;&#x7528;</strong>
+&#x53F3;&#x952E; deb &#x5305;&#xFF0C;&#x9009;&#x62E9;&#x6253;&#x5F00;&#x65B9;&#x5F0F;&#xFF0C;&#x6216;&#x8005;</p>
+<pre><code>sudo gdebi &lt;deb&gt;
+</code></pre><h3 id="&#x641C;&#x72D7;&#x8F93;&#x5165;&#x6CD5;">&#x641C;&#x72D7;&#x8F93;&#x5165;&#x6CD5;</h3>
+<p><a href="http://pinyin.sogou.com/linux/?r=pinyin" target="_blank">&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</a>&#xFF0C;&#x4F7F;&#x7528; <code>GDebi</code> &#x5B89;&#x88C5;&#x3002;</p>
+<h3 id="atom">Atom</h3>
+<p><a href="https://atom.io/" target="_blank">&#x5B98;&#x7F51;&#x4E0B;&#x8F7D;</a></p>
+<h3 id="java">Java</h3>
+<pre><code class="lang-bash">sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+</code></pre>
+<h3 id="uget">uGet</h3>
+<p>&#x4E0B;&#x8F7D;&#x5DE5;&#x5177;</p>
+<pre><code class="lang-bash">sudo apt-get install uget
+</code></pre>
+<h3 id="thunar">Thunar</h3>
+<p>&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;</p>
+<pre><code class="lang-bash">sudo apt-get install thunar
+</code></pre>
+<p>&#x8BBE;&#x7F6E;&#x91CC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E2D;&#x952E;&#x5728;&#x65B0;&#x6807;&#x7B7E;&#x9875;&#x4E2D;&#x6253;&#x5F00;&#x6587;&#x4EF6;</p>
+<h3 id="pcmanfm">PCManFM</h3>
+<p>&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;</p>
+<pre><code class="lang-bash">sudo add-apt-repository ppa:lubuntu-dev/lubuntu-daily 
+sudo apt-get update 
+sudo apt-get install pcmanfm
+</code></pre>
+<p>&#x8BBE;&#x4E3A;&#x9ED8;&#x8BA4;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;</p>
+<pre><code class="lang-bash">xdg-mime default pcmanfm.desktop inode/directory 
 
+sudo mv /etc/xdg/autostart/nautilus-autostart.desktop /etc/xdg/autostart/nautilus-autostart.desktop.bak 
+
+<span class="hljs-built_in">cd</span> /etc/xdg/autostart
+
+sudo touch pcmanfm-autostart.desktop
+</code></pre>
+<p>&#x5728; <code>pcmanfm-autostart.desktop</code> &#x5199;&#x5165;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-bash">[Desktop Entry] 
+Type=Application 
+Name=File Manager 
+PCManFM Exec=pcmanfm --desktop 
+OnlyShowIn=GNOME;Unity;Pantheon; 
+NoDisplay=<span class="hljs-literal">true</span>
+</code></pre>
+<h3 id="wps">Wps</h3>
+<p><a href="http://www.ubuntukylin.com/application/show.php?lang=cn&amp;id=278" target="_blank">&#x5B98;&#x7F51;</a>&#x4E0B;&#x8F7D;</p>
+<h4 id="&#x7F3A;&#x5C11;&#x5B57;&#x4F53;">&#x7F3A;&#x5C11;&#x5B57;&#x4F53;</h4>
+<ol>
+<li><a href="data/wps_symbol_fonts.zip">&#x8FD9;&#x91CC;</a>&#x4E0B;&#x8F7D;&#x5B57;&#x4F53;&#xFF0C;&#x89E3;&#x538B;&#xFF0C;&#x8FDB;&#x5165;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x590D;&#x5236;&#x5230; <code>/usr/share/fonts</code> &#x76EE;&#x5F55;&#x4E2D;<pre><code class="lang-bash">sudo cp * /usr/share/fonts/
+</code></pre>
+</li>
+<li>&#x751F;&#x6210;&#x5B57;&#x4F53;&#x7D22;&#x5F15;<pre><code class="lang-bash">sudo mkfontscale
+sudo mkfontdir
+</code></pre>
+</li>
+<li>&#x66F4;&#x65B0;&#x5B57;&#x4F53;&#x7F13;&#x5B58;<pre><code class="lang-bash">sudo <span class="hljs-built_in">fc</span>-cache
+</code></pre>
+</li>
+</ol>
+<p>&#x5982;&#x679C;&#x7F3A;&#x5C11;&#x4E2D;&#x6587;&#x5B57;&#x4F53;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06; windows &#x7CFB;&#x7EDF;&#x4E2D; <code>Windows</code> -&gt; <code>Fonts</code> &#x4E2D;&#x7684;&#x5B57;&#x4F53;&#x6309;&#x7167;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x6DFB;&#x52A0;&#x5230; ubuntu &#x7CFB;&#x7EDF;&#x4E2D;</p>
+<h3 id="sublimetext">SublimeText</h3>
+<pre><code>sudo add-apt-repository ppa:webupd8team/sublime-text-3 
+sudo apt-get update 
+sudo apt-get install sublime-text-installer
+</code></pre>
                     
                     </section>
                 
@@ -899,10 +1005,10 @@
         </div>
 
         
-        <a href="./ubuntu_commad.html" class="navigation navigation-prev " aria-label="Previous page: 命令"><i class="fa fa-angle-left"></i></a>
+        <a href="./配置.html" class="navigation navigation-prev " aria-label="Previous page: 配置"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./配置.html" class="navigation navigation-next " aria-label="Next page: 配置"><i class="fa fa-angle-right"></i></a>
+        <a href="./windows.html" class="navigation navigation-next " aria-label="Next page: Windows"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

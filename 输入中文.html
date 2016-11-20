@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>打开大文件 | Notes</title>
+        <title>输入中文 | Notes</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.4">
@@ -47,10 +47,10 @@
         
     
     
-    <link rel="next" href="./配置.html" />
+    <link rel="next" href="./conemu.html" />
     
     
-    <link rel="prev" href="./ubuntu_commad.html" />
+    <link rel="prev" href="./sublime_text.html" />
     
 
         
@@ -59,9 +59,9 @@
         
         
     <div class="book"
-        data-level="11.2"
-        data-chapter-title="打开大文件"
-        data-filepath="ubuntu_largefile.md"
+        data-level="13.2.1"
+        data-chapter-title="输入中文"
+        data-filepath="输入中文.md"
         data-basepath="."
         data-revision="Sun Nov 20 2016 15:37:30 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -601,7 +601,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="11.2" data-path="ubuntu_largefile.html">
+        <li class="chapter " data-level="11.2" data-path="ubuntu_largefile.html">
             
                 
                     <a href="./ubuntu_largefile.html">
@@ -770,7 +770,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="13.2.1" data-path="输入中文.html">
+        <li class="chapter active" data-level="13.2.1" data-path="输入中文.html">
             
                 
                     <a href="./输入中文.html">
@@ -873,23 +873,142 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;">&#x6253;&#x5F00;&#x5927;&#x6587;&#x4EF6;</h2>
-<h3 id="glogg&#x53EA;&#x662F;&#x67E5;&#x770B;">glogg(&#x53EA;&#x662F;&#x67E5;&#x770B;)</h3>
-<p><strong>&#x5B89;&#x88C5;</strong></p>
-<pre><code class="lang-bash">sudo apt-get install glogg
-</code></pre>
-<p><strong>&#x4F7F;&#x7528;</strong></p>
-<pre><code class="lang-bash">glogg text.txt
-</code></pre>
-<h3 id="joe&#x53EF;&#x7F16;&#x8F91;">JOE(&#x53EF;&#x7F16;&#x8F91;)</h3>
-<p><strong>&#x5B89;&#x88C5;</strong></p>
-<pre><code class="lang-bash">sudo apt-get install joe
-</code></pre>
-<p><strong>&#x4F7F;&#x7528;</strong></p>
-<pre><code class="lang-bash">joe test.txt
-</code></pre>
-<p>&#x4F7F;&#x7528;joe&#x6253;&#x5F00;&#x6587;&#x4EF6;&#x540E;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x7F16;&#x8F91;&#x6587;&#x4EF6;, &#x5176;&#x4ED6;&#x64CD;&#x4F5C;&#x4F8B;&#x5982;&#x8DF3;&#x8F6C;&#x3001;&#x641C;&#x7D22;&#x7B49;&#x9700;&#x8981;&#x914D;&#x5408; <code>ctrl</code> &#x952E;&#x6765;&#x4F7F;&#x7528;&#x3002;&#x4F7F;&#x7528; <code>ctrl + k + h</code>&#x6765;&#x6253;&#x5F00;&#x5E2E;&#x52A9;</p>
+                        <h2 id="ubuntu-&#x4E0B;&#x8F93;&#x5165;&#x4E2D;&#x6587;">Ubuntu &#x4E0B;&#x8F93;&#x5165;&#x4E2D;&#x6587;</h2>
+<!-- toc -->
+<ul>
+<li><a href="#&#x521B;&#x5EFA;sublimeimfixc">&#x521B;&#x5EFA;sublime_imfix.c</a></li>
+<li><a href="#&#x7F16;&#x8BD1;&#x6587;&#x4EF6;">&#x7F16;&#x8BD1;&#x6587;&#x4EF6;</a></li>
+<li><a href="#&#x590D;&#x5236;&#x6587;&#x4EF6;">&#x590D;&#x5236;&#x6587;&#x4EF6;</a></li>
+<li><a href="#&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</a></li>
+</ul>
+<!-- toc stop -->
+<h3 id="&#x521B;&#x5EFA;sublimeimfixc">&#x521B;&#x5EFA;sublime_imfix.c</h3>
+<p>&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x5185;&#x5BB9;</p>
+<pre><code class="lang-c">/*
+sublime-imfix.c
+Use LD_PRELOAD to interpose some function to fix sublime input method support for linux.
+By Cjacker Huang &lt;jianzhong.huang at i-soft.com.cn&gt;
 
+gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-2.0` -fPIC
+LD_PRELOAD=./libsublime-imfix.so sublime_text
+*/
+#include &lt;gtk/gtk.h&gt;
+#include &lt;gdk/gdkx.h&gt;
+typedef GdkSegment GdkRegionBox;
+
+struct _GdkRegion
+{
+  long size;
+  long numRects;
+  GdkRegionBox *rects;
+  GdkRegionBox extents;
+};
+
+GtkIMContext *local_context;
+
+void
+gdk_region_get_clipbox (const GdkRegion *region,
+            GdkRectangle    *rectangle)
+{
+  g_return_if_fail (region != NULL);
+  g_return_if_fail (rectangle != NULL);
+
+  rectangle-&gt;x = region-&gt;extents.x1;
+  rectangle-&gt;y = region-&gt;extents.y1;
+  rectangle-&gt;width = region-&gt;extents.x2 - region-&gt;extents.x1;
+  rectangle-&gt;height = region-&gt;extents.y2 - region-&gt;extents.y1;
+  GdkRectangle rect;
+  rect.x = rectangle-&gt;x;
+  rect.y = rectangle-&gt;y;
+  rect.width = 0;
+  rect.height = rectangle-&gt;height;
+  //The caret width is 2;
+  //Maybe sometimes we will make a mistake, but for most of the time, it should be the caret.
+  if(rectangle-&gt;width == 2 &amp;&amp; GTK_IS_IM_CONTEXT(local_context)) {
+        gtk_im_context_set_cursor_location(local_context, rectangle);
+  }
+}
+
+//this is needed, for example, if you input something in file dialog and return back the edit area
+//context will lost, so here we set it again.
+
+static GdkFilterReturn event_filter (GdkXEvent *xevent, GdkEvent *event, gpointer im_context)
+{
+    XEvent *xev = (XEvent *)xevent;
+    if(xev-&gt;type == KeyRelease &amp;&amp; GTK_IS_IM_CONTEXT(im_context)) {
+       GdkWindow * win = g_object_get_data(G_OBJECT(im_context),&quot;window&quot;);
+       if(GDK_IS_WINDOW(win))
+         gtk_im_context_set_client_window(im_context, win);
+    }
+    return GDK_FILTER_CONTINUE;
+}
+
+void gtk_im_context_set_client_window (GtkIMContext *context,
+          GdkWindow    *window)
+{
+  GtkIMContextClass *klass;
+  g_return_if_fail (GTK_IS_IM_CONTEXT (context));
+  klass = GTK_IM_CONTEXT_GET_CLASS (context);
+  if (klass-&gt;set_client_window)
+    klass-&gt;set_client_window (context, window);
+
+  if(!GDK_IS_WINDOW (window))
+    return;
+  g_object_set_data(G_OBJECT(context),&quot;window&quot;,window);
+  int width = gdk_window_get_width(window);
+  int height = gdk_window_get_height(window);
+  if(width != 0 &amp;&amp; height !=0) {
+    gtk_im_context_focus_in(context);
+    local_context = context;
+  }
+  gdk_window_add_filter (window, event_filter, context);
+}
+</code></pre>
+<h3 id="&#x7F16;&#x8BD1;&#x6587;&#x4EF6;">&#x7F16;&#x8BD1;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-bash">sudo apt-get install build-essential libgtk2.<span class="hljs-number">0</span>-dev
+sudo gcc -shared -o libsublime-imfix.so sublime_imfix.c  `pkg-config --libs --cflags gtk+-<span class="hljs-number">2.0</span>` <span class="hljs-operator">-f</span>PIC
+</code></pre>
+<h3 id="&#x590D;&#x5236;&#x6587;&#x4EF6;">&#x590D;&#x5236;&#x6587;&#x4EF6;</h3>
+<pre><code class="lang-bash">sudo cp libsublime-imfix.so /opt/sublime_text/
+</code></pre>
+<h3 id="&#x914D;&#x7F6E;&#x6587;&#x4EF6;">&#x914D;&#x7F6E;&#x6587;&#x4EF6;</h3>
+<p>&#x4FEE;&#x6539; <code>subl</code> &#x6587;&#x4EF6;</p>
+<pre><code class="lang-bash">sudo gedit /usr/bin/subl
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x4E3A;:</p>
+<pre><code class="lang-bash"><span class="hljs-shebang">#!/bin/sh</span>
+LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so <span class="hljs-built_in">exec</span> /opt/sublime_text/sublime_text <span class="hljs-string">&quot;<span class="hljs-variable">$@</span>&quot;</span>
+</code></pre>
+<p>&#x4FEE;&#x6539;sublime_text.desktop</p>
+<pre><code class="lang-bash">sudo gedit /usr/share/applications/sublime-text.desktop
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;</p>
+<pre><code>[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Sublime Text
+GenericName=Text Editor
+Comment=Sophisticated text editor for code, markup and prose
+Exec=bash -c &apos;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text %F&apos; 
+Terminal=false
+MimeType=text/plain;
+Icon=sublime-text
+Categories=TextEditor;Development;Utility;
+StartupNotify=true
+Actions=Window;Document;
+
+X-Desktop-File-Install-Version=0.22
+
+[Desktop Action Window]
+Name=New Window
+Exec=bash -c &apos;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text -n&apos; 
+OnlyShowIn=Unity;
+
+[Desktop Action Document]
+Name=New File
+Exec=bash -c &apos;LD_PRELOAD=/opt/sublime_text/libsublime-imfix.so /opt/sublime_text/sublime_text --command new_file&apos; 
+OnlyShowIn=Unity;
+</code></pre>
                     
                     </section>
                 
@@ -899,10 +1018,10 @@
         </div>
 
         
-        <a href="./ubuntu_commad.html" class="navigation navigation-prev " aria-label="Previous page: 命令"><i class="fa fa-angle-left"></i></a>
+        <a href="./sublime_text.html" class="navigation navigation-prev " aria-label="Previous page: Sublime Text"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="./配置.html" class="navigation navigation-next " aria-label="Next page: 配置"><i class="fa fa-angle-right"></i></a>
+        <a href="./conemu.html" class="navigation navigation-next " aria-label="Next page: ConEmu"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
