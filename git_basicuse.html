@@ -63,7 +63,7 @@
         data-chapter-title="基本使用"
         data-filepath="git_basicuse.md"
         data-basepath="."
-        data-revision="Sun Nov 20 2016 15:37:30 GMT+0800 (CST)"
+        data-revision="Sat Jan 14 2017 20:26:20 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -820,6 +820,21 @@
             
         </li>
     
+        <li class="chapter " data-level="13.5" data-path="chrome.html">
+            
+                
+                    <a href="./chrome.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.5.</b>
+                        
+                        Chrome
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -873,7 +888,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x57FA;&#x672C;&#x4F7F;&#x7528;</h2>
+                        <h1 id="&#x57FA;&#x672C;&#x4F7F;&#x7528;">&#x57FA;&#x672C;&#x4F7F;&#x7528;</h1>
 <!-- toc -->
 <ul>
 <li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a><ul>
@@ -882,17 +897,23 @@
 </ul>
 </li>
 <li><a href="#&#x5206;&#x652F;">&#x5206;&#x652F;</a></li>
+<li><a href="#&#x6807;&#x7B7E;">&#x6807;&#x7B7E;</a></li>
+<li><a href="#&#x56DE;&#x6EDA;">&#x56DE;&#x6EDA;</a><ul>
+<li><a href="#&#x672C;&#x5730;&#x4EE3;&#x7801;&#x56DE;&#x6EDA;">&#x672C;&#x5730;&#x4EE3;&#x7801;&#x56DE;&#x6EDA;</a></li>
+<li><a href="#&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x5E93;&#x56DE;&#x6EDA;">&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x5E93;&#x56DE;&#x6EDA;</a></li>
+</ul>
+</li>
 </ul>
 <!-- toc stop -->
-<h3 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h3>
-<h4 id="&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7528;&#x6237;&#x540D;&#x90AE;&#x7BB1;">&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7528;&#x6237;&#x540D;&#x90AE;&#x7BB1;</h4>
+<h2 id="&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</h2>
+<h3 id="&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7528;&#x6237;&#x540D;&#x90AE;&#x7BB1;">&#x914D;&#x7F6E;&#x5168;&#x5C40;&#x7528;&#x6237;&#x540D;&#x90AE;&#x7BB1;</h3>
 <pre><code class="lang-bash">git config --global user.name <span class="hljs-string">&quot;username&quot;</span>
 git config --global user.email <span class="hljs-string">&quot;email&quot;</span>
 </code></pre>
-<h4 id="&#x751F;&#x6210;&#x5BC6;&#x94A5;">&#x751F;&#x6210;&#x5BC6;&#x94A5;</h4>
+<h3 id="&#x751F;&#x6210;&#x5BC6;&#x94A5;">&#x751F;&#x6210;&#x5BC6;&#x94A5;</h3>
 <pre><code class="lang-bash">ssh-keygen -C <span class="hljs-string">&apos;email address&apos;</span> -t rsa
 </code></pre>
-<h3 id="&#x5206;&#x652F;">&#x5206;&#x652F;</h3>
+<h2 id="&#x5206;&#x652F;">&#x5206;&#x652F;</h2>
 <p><strong> &#x521B;&#x5EFA;</strong></p>
 <pre><code class="lang-bash">git branch gh-pages
 </code></pre>
@@ -902,7 +923,27 @@ git config --global user.email <span class="hljs-string">&quot;email&quot;</span
 <p><strong>&#x521B;&#x5EFA;&#x5E76;&#x5207;&#x6362;</strong></p>
 <pre><code class="lang-bash"> git checkout -b gh-pages
 </code></pre>
+<h2 id="&#x6807;&#x7B7E;">&#x6807;&#x7B7E;</h2>
+<pre><code>git tag -a v1.4 -m &apos;my version 1.4&apos;
+git push origin v1.4
+// &#x5C06;&#x672C;&#x5730;&#x6240;&#x6709;&#x6807;&#x7B7E;push&#x5230;&#x8FDC;&#x7A0B;&#x670D;&#x52A1;&#x5668;
+git push origin --tags
+</code></pre><h2 id="&#x56DE;&#x6EDA;">&#x56DE;&#x6EDA;</h2>
+<p><a href="http://limite.me/blog/2016/04/19/git-dai-ma-ku-hui-gun-ji-lu/" target="_blank">Git &#x4EE3;&#x7801;&#x5E93;&#x56DE;&#x6EDA;&#x8BB0;&#x5F55;</a></p>
+<h3 id="&#x672C;&#x5730;&#x4EE3;&#x7801;&#x56DE;&#x6EDA;">&#x672C;&#x5730;&#x4EE3;&#x7801;&#x56DE;&#x6EDA;</h3>
+<pre><code>git reset --hard commit-id //&#x56DE;&#x6EDA;&#x5230;commit-id&#xFF0C;&#x5C06;commit-id&#x4E4B;&#x540E;&#x63D0;&#x4EA4;&#x7684;commit&#x8FDB;&#x884C;&#x6E05;&#x9664;
+git reset --hard HEAD~3 //&#x5C06;&#x6700;&#x8FD1;3&#x6B21;&#x7684;&#x63D0;&#x4EA4;&#x56DE;&#x6EDA;
+</code></pre><h3 id="&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x5E93;&#x56DE;&#x6EDA;">&#x8FDC;&#x7A0B;&#x4EE3;&#x7801;&#x5E93;&#x56DE;&#x6EDA;</h3>
+<pre><code>1&#x3001;git checkout the_branch
 
+2&#x3001;git pull
+
+3&#x3001;git reset --hard the_commit_id //&#x628A;the_branch&#x672C;&#x5730;&#x56DE;&#x6EDA;&#x5230;the_commit_id
+
+4&#x3001;git push origin :the_branch //&#x5220;&#x9664;&#x8FDC;&#x7A0B; the_branch(&#x5192;&#x53F7;&#x524D;&#x9762;&#x7684;&#x7A7A;&#x683C;&#x4E0D;&#x80FD;&#x5C11;&#xFF0C;&#x539F;&#x7406;&#x662F;&#x628A;&#x4E00;&#x4E2A;&#x7A7A;&#x5206;&#x652F;push&#x5230;server&#x4E0A;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x5220;&#x9664;&#x8BE5;&#x5206;&#x652F;&#x3002;)
+
+5&#x3001;git push origin the_branch //&#x7528;&#x56DE;&#x6EDA;&#x540E;&#x7684;&#x672C;&#x5730;&#x5206;&#x652F;&#x91CD;&#x65B0;&#x5EFA;&#x7ACB;&#x8FDC;&#x7A0B;&#x5206;&#x652F;
+</code></pre>
                     
                     </section>
                 
