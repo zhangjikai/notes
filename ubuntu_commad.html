@@ -63,7 +63,7 @@
         data-chapter-title="命令"
         data-filepath="ubuntu_commad.md"
         data-basepath="."
-        data-revision="Sat Jan 14 2017 20:26:20 GMT+0800 (CST)"
+        data-revision="Sun Jan 15 2017 20:20:51 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -902,6 +902,7 @@
 <li><a href="#&#x914D;&#x7F6E;df-du">&#x914D;&#x7F6E;df du</a></li>
 <li><a href="#cd">cd</a></li>
 <li><a href="#dpkg">dpkg</a></li>
+<li><a href="#rsync-&#x590D;&#x5236;&#x6587;&#x4EF6;">rsync &#x590D;&#x5236;&#x6587;&#x4EF6;</a></li>
 </ul>
 <!-- toc stop -->
 <h3 id="scp">scp</h3>
@@ -1020,7 +1021,11 @@ dpkg -r package
 dpkg -P package
 </code></pre><p><strong>&#x67E5;&#x627E;&#x5305;&#x7684;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;</strong></p>
 <pre><code>dpkg -s package
+</code></pre><h3 id="rsync-&#x590D;&#x5236;&#x6587;&#x4EF6;">rsync &#x590D;&#x5236;&#x6587;&#x4EF6;</h3>
+<p>&#x590D;&#x5236;&#x65F6;&#x6392;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;, <a href="http://askubuntu.com/questions/333640/cp-command-to-exclude-certain-files-from-being-copied" target="_blank">cp command to exclude certain files from being copied</a></p>
+<pre><code class="lang-bash">rsync -av --exclude=<span class="hljs-string">&apos;path1/to/exclude&apos;</span> --exclude=<span class="hljs-string">&apos;path2/to/exclude&apos;</span> <span class="hljs-built_in">source</span> destination
 </code></pre>
+
                     
                     </section>
                 
