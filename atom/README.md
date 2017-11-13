@@ -38,6 +38,7 @@ sudo apt-get install uncrustify
 ```
 indent_columns = 4
 ```
+
 ### atom-project-manager
 * 列出项目 - `alt-shift-p`
 * 保存项目 - `Project Manager: Save Project`
@@ -51,3 +52,21 @@ indent_columns = 4
 ### markdown-themeable-pdf
 导出pdf，十分好用
 * `ctrl + shift + e` - 快捷键
+
+### vim-mode-plus
+vim 插件
+修改按键映射，配置文件地址：
+```
+<user_home>\.atom\packages\vim-mode-plus\keymaps
+```
+配置内容：
+```
+'atom-text-editor.vim-mode-plus:not(.normal-mode)':
+  'j k': 'vim-mode-plus:activate-normal-mode'
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'ctrl-o': 'vim-mode-plus:move-to-last-character-of-line'
+  'ctrl-h': 'vim-mode-plus:move-left'  
+  'ctrl-j': 'vim-mode-plus:move-down'
+  'ctrl-k': 'vim-mode-plus:move-up'
+  'ctrl-l': 'vim-mode-plus:move-right'
+```
