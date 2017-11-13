@@ -30,7 +30,8 @@
         "3-ba@^0.9.0",
         "fancybox",
         "github-buttons@2.1.0",
-        "katex"
+        "katex",
+        "term"
     ],
     "pluginsConfig": {
         "gitbook": ">=3.1.0",
@@ -101,6 +102,11 @@
         },
         "disqus": {
             "shortName": "book-2"
+        },
+        "term": {
+          "copyButtons": true,
+          "fade": false,
+          "style": "classic"
         }
     }
 }
