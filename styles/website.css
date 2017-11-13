@@ -87,7 +87,8 @@ table td:nth-child(1) {
 }
 
 .book-summary ul.summary li span {
-  color: #afafaf;
+  color: #044f67;
+  font-weight: bold;
 }
 
 .book-summary ul.summary {
