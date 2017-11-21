@@ -1,7 +1,7 @@
 # 笔记
 
 * [前言](README.md)
-* Java
+* [Java](java/README.md)
   - [路径](java/路径.md)
 * Spring
   - [web.xml 配置](spring/web-xml-配置.md)
