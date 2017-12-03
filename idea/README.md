@@ -32,3 +32,5 @@ inoremap <C-d> <Delete>
 
 inoremap jk <Esc>
 ```
+## 配置
+* 取消在第一列添加注释 - Go to File > Settings > Editor > Code Style > Java > Code Generation and uncheck the option "Line comment at first column".
