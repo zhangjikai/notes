@@ -461,7 +461,7 @@
                     
                         <b>8.</b>
                     
-                    Apache
+                    Web Server
             
                 </span>
             
@@ -470,14 +470,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="8.1" data-path="../apache/">
+        <li class="chapter " data-level="8.1" data-path="../server/apache.html">
             
-                <a href="../apache/">
+                <a href="../server/apache.html">
             
                     
                         <b>8.1.</b>
                     
-                    使用
+                    apache
             
                 </a>
             
@@ -1009,7 +1009,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</a></li><ul><li><a href="#scp">scp</a></li><li><a href="#export">export</a></li><li><a href="#unset">unset</a></li><li><a href="#&#x91CD;&#x542F;&#x7F51;&#x5361;">&#x91CD;&#x542F;&#x7F51;&#x5361;</a></li><li><a href="#shadowsocks">shadowsocks</a></li><li><a href="#&#x5185;&#x5B58;">&#x5185;&#x5B58;</a></li><li><a href="#tree">Tree</a></li><li><a href="#whereis">whereis</a></li><li><a href="#&#x914D;&#x7F6E;df-du">&#x914D;&#x7F6E;df du</a></li><li><a href="#cd">cd</a></li><li><a href="#dpkg">dpkg</a></li><li><a href="#rsync-&#x590D;&#x5236;&#x6587;&#x4EF6;">rsync &#x590D;&#x5236;&#x6587;&#x4EF6;</a></li></ul></ul></div><a href="#&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</a></li><ul><li><a href="#scp">scp</a></li><li><a href="#export">export</a></li><li><a href="#unset">unset</a></li><li><a href="#&#x91CD;&#x542F;&#x7F51;&#x5361;">&#x91CD;&#x542F;&#x7F51;&#x5361;</a></li><li><a href="#shadowsocks">shadowsocks</a></li><li><a href="#&#x5185;&#x5B58;">&#x5185;&#x5B58;</a></li><li><a href="#tree">Tree</a></li><li><a href="#whereis">whereis</a></li><li><a href="#&#x914D;&#x7F6E;df-du">&#x914D;&#x7F6E;df du</a></li><li><a href="#cd">cd</a></li><li><a href="#dpkg">dpkg</a></li><li><a href="#rsync-&#x590D;&#x5236;&#x6587;&#x4EF6;">rsync &#x590D;&#x5236;&#x6587;&#x4EF6;</a></li><li><a href="#&#x8F6F;&#x94FE;&#x63A5;">&#x8F6F;&#x94FE;&#x63A5;</a></li></ul></ul></div><a href="#&#x547D;&#x4EE4;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;</h1>
 <!-- toc -->
 <ul>
 <li><a href="#scp">scp</a></li>
@@ -1024,6 +1024,7 @@
 <li><a href="#cd">cd</a></li>
 <li><a href="#dpkg">dpkg</a></li>
 <li><a href="#rsync-&#x590D;&#x5236;&#x6587;&#x4EF6;">rsync &#x590D;&#x5236;&#x6587;&#x4EF6;</a></li>
+<li><a href="#&#x8F6F;&#x94FE;&#x63A5;">&#x8F6F;&#x94FE;&#x63A5;</a></li>
 </ul>
 <!-- tocstop -->
 <h2 id="scp"><a name="scp" class="anchor-navigation-ex-anchor" href="#scp"><i class="fa fa-link" aria-hidden="true"></i></a>scp</h2>
@@ -1146,7 +1147,13 @@ dpkg -P package
 <p>&#x590D;&#x5236;&#x65F6;&#x6392;&#x9664;&#x6587;&#x4EF6;&#x548C;&#x6587;&#x4EF6;&#x5939;, <a href="http://askubuntu.com/questions/333640/cp-command-to-exclude-certain-files-from-being-copied" target="_blank">cp command to exclude certain files from being copied</a></p>
 <pre class="language-"><code class="lang-bash"><span class="token function">rsync</span> -av --exclude<span class="token operator">=</span><span class="token string">&apos;path1/to/exclude&apos;</span> --exclude<span class="token operator">=</span><span class="token string">&apos;path2/to/exclude&apos;</span> <span class="token function">source</span> destination
 </code></pre>
+<h2 id="&#x8F6F;&#x94FE;&#x63A5;"><a name="&#x8F6F;&#x94FE;&#x63A5;" class="anchor-navigation-ex-anchor" href="#&#x8F6F;&#x94FE;&#x63A5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8F6F;&#x94FE;&#x63A5;</h2>
+<pre class="language-"><code># &#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x662F;&#x6587;&#x4EF6;&#x5939;&#x672B;&#x5C3E;&#x4E0D;&#x8981;&#x52A0; /&#xFF0C;&#x4F8B;&#x5982; ln -s /home/user/aa aa
+ln -s <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</span><span class="token punctuation">&gt;</span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x94FE;&#x63A5;&#x540D;</span><span class="token punctuation">&gt;</span></span>
 
+# &#x5220;&#x9664;&#x8F6F;&#x94FE;&#x63A5;
+rm -rf <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>&#x94FE;&#x63A5;&#x540D;</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
                                 
                                 </section>
                             
@@ -1185,7 +1192,7 @@ dpkg -P package
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"命令","level":"16.1","depth":1,"next":{"title":"大文件","level":"16.2","depth":1,"path":"ubuntu/大文件.md","ref":"ubuntu/大文件.md","articles":[]},"previous":{"title":"Ubuntu","level":"16","depth":0,"ref":"","articles":[{"title":"命令","level":"16.1","depth":1,"path":"ubuntu/命令.md","ref":"ubuntu/命令.md","articles":[]},{"title":"大文件","level":"16.2","depth":1,"path":"ubuntu/大文件.md","ref":"ubuntu/大文件.md","articles":[]},{"title":"配置","level":"16.3","depth":1,"path":"ubuntu/配置.md","ref":"ubuntu/配置.md","articles":[]},{"title":"软件","level":"16.4","depth":1,"path":"ubuntu/软件.md","ref":"ubuntu/软件.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@0.1.1","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","prism-themes@^0.0.2","anchors@^0.7.1","disqus","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","3-ba@^0.9.0","fancybox","github-buttons@2.1.0","katex","term"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"book-2"},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/zhangjikai/notes"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"term":{"copyButtons":true,"fade":false,"lineStyles":true,"prompt":"(?<prompt>[^\\$^#^:]*)(?<pathsep>:?)(?<path>[^\\$^#]*?)(?<delimiter>[\\$#] )(?<command>.*)$","style":"classic"},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://www.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"gitbook":">=3.1.0","sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/notes/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"记录平时遇到的一些问题以及基础知识"},"file":{"path":"ubuntu/命令.md","mtime":"2017-11-11T03:13:53.973Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T05:16:28.028Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"命令","level":"16.1","depth":1,"next":{"title":"大文件","level":"16.2","depth":1,"path":"ubuntu/大文件.md","ref":"ubuntu/大文件.md","articles":[]},"previous":{"title":"Ubuntu","level":"16","depth":0,"ref":"","articles":[{"title":"命令","level":"16.1","depth":1,"path":"ubuntu/命令.md","ref":"ubuntu/命令.md","articles":[]},{"title":"大文件","level":"16.2","depth":1,"path":"ubuntu/大文件.md","ref":"ubuntu/大文件.md","articles":[]},{"title":"配置","level":"16.3","depth":1,"path":"ubuntu/配置.md","ref":"ubuntu/配置.md","articles":[]},{"title":"软件","level":"16.4","depth":1,"path":"ubuntu/软件.md","ref":"ubuntu/软件.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@0.1.1","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","prism-themes@^0.0.2","anchors@^0.7.1","disqus","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","3-ba@^0.9.0","fancybox","github-buttons@2.1.0","katex","term"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"book-2"},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/zhangjikai/notes"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"term":{"copyButtons":true,"fade":false,"lineStyles":true,"prompt":"(?<prompt>[^\\$^#^:]*)(?<pathsep>:?)(?<path>[^\\$^#]*?)(?<delimiter>[\\$#] )(?<command>.*)$","style":"classic"},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://www.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"gitbook":">=3.1.0","sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/notes/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"记录平时遇到的一些问题以及基础知识"},"file":{"path":"ubuntu/命令.md","mtime":"2017-12-07T06:42:15.775Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T10:26:35.953Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
