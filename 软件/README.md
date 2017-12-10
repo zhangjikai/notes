@@ -2,9 +2,10 @@
 <!-- toc -->
 
 ## 实用软件
-LICEcap - gif 录像
-## VPS 配置
+* LICEcap - gif 录像
+* Snipaste - 截图
 
+## VPS 配置
 ### 使用kcptun 加速vps
 
 [教程地址](https://blog.kuoruan.com/110.html)
