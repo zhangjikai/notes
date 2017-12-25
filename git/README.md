@@ -46,6 +46,12 @@ git tag -a v1.4 -m 'my version 1.4'
 git push origin v1.4
 // 将本地所有标签push到远程服务器
 git push origin --tags
+
+// 删除本地 tag
+git tag -d 标签名  
+
+// 删除远程 tag
+git push origin :refs/tags/标签名  
 ```
 
 ## 回滚
