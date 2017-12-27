@@ -19,6 +19,7 @@
   - [使用](chrome/README.md)
 * Web Server
   - [apache](server/apache.md)
+  - [nginx](server/nginx.md)
 * C
   - [Makefile](c/Makefile.md)
   - [GDB](c/GDB.md)
