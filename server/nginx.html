@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Java · 笔记</title>
+        <title>nginx · 笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -89,10 +89,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="路径.html" />
     
-    
-    <link rel="prev" href="../" />
+    <link rel="prev" href="apache.html" />
     
 
     <style>
@@ -174,9 +172,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2" data-path="./">
+        <li class="chapter " data-level="2" data-path="../java/">
             
-                <a href="./">
+                <a href="../java/">
             
                     
                         <b>2.</b>
@@ -190,9 +188,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1" data-path="路径.html">
+        <li class="chapter " data-level="2.1" data-path="../java/路径.html">
             
-                <a href="路径.html">
+                <a href="../java/路径.html">
             
                     
                         <b>2.1.</b>
@@ -472,9 +470,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="8.1" data-path="../server/apache.html">
+        <li class="chapter " data-level="8.1" data-path="apache.html">
             
-                <a href="../server/apache.html">
+                <a href="apache.html">
             
                     
                         <b>8.1.</b>
@@ -487,9 +485,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.2" data-path="../server/nginx.html">
+        <li class="chapter active" data-level="8.2" data-path="nginx.html">
             
-                <a href="../server/nginx.html">
+                <a href="nginx.html">
             
                     
                         <b>8.2.</b>
@@ -1011,7 +1009,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Java</a>
+        <a href=".." >nginx</a>
     </h1>
 </div>
 
@@ -1026,12 +1024,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#java">Java</a></li></ul></div><a href="#java" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="java"><a name="java" class="anchor-navigation-ex-anchor" href="#java"><i class="fa fa-link" aria-hidden="true"></i></a>Java</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><a href="#nginx">Nginx</a></li><ul><li><a href="#&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</a></li><li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li></ul></ul></div><a href="#nginx" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="nginx"><a name="nginx" class="anchor-navigation-ex-anchor" href="#nginx"><i class="fa fa-link" aria-hidden="true"></i></a>Nginx</h1>
+<!-- toc -->
 <ul>
-<li><a href="https://howtodoinjava.com/java-tutorials-list-howtodoinjava/" target="_blank">Java Tutorials List</a></li>
-<li><a href="https://dev-cheats.com/topics/java-best-practices.html" target="_blank">Java &#x7F16;&#x7A0B;&#x6700;&#x4F73;&#x5B9E;&#x8DF5;</a></li>
+<li><a href="#&#x547D;&#x4EE4;">&#x547D;&#x4EE4;</a></li>
+<li><a href="#&#x914D;&#x7F6E;">&#x914D;&#x7F6E;</a></li>
 </ul>
+<!-- tocstop -->
+<h2 id="&#x547D;&#x4EE4;"><a name="&#x547D;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x547D;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x547D;&#x4EE4;</h2>
+<pre class="language-"><code># &#x91CD;&#x542F;
+sudo nginx -s reload
 
+# &#x68C0;&#x67E5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x786E;
+nginx -t -c /usr/nginx/conf/nginx.conf  
+
+# &#x68C0;&#x67E5;&#x9ED8;&#x8BA4;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;
+nginx -t
+</code></pre><h2 id="&#x914D;&#x7F6E;"><a name="&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x914D;&#x7F6E;</h2>
+<p>&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#xFF1A; <code>/etc/nginx/sites-available/default</code></p>
+<pre class="language-"><code>server {
+    listen       80;
+    server_name  localhost;
+
+    location / {
+        root   html;
+        index  index.html index.htm;
+    }
+
+    location /test {
+          proxy_pass http://localhost:8080/test;
+    }
+
+    location ~/test2/* {
+         return 301 http://localhost/
+    }
+
+
+}
+</code></pre>
                                 
                                 </section>
                             
@@ -1058,14 +1088,10 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: 前言">
+                <a href="apache.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: apache">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="路径.html" class="navigation navigation-next " aria-label="Next page: 路径">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -1074,7 +1100,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Java","level":"2","depth":0,"next":{"title":"路径","level":"2.1","depth":1,"path":"java/路径.md","ref":"java/路径.md","articles":[]},"previous":{"title":"前言","level":"1","depth":0,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@0.1.1","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","prism-themes@^0.0.2","anchors@^0.7.1","disqus","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","3-ba@^0.9.0","fancybox","github-buttons@2.1.0","katex","term"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"book-2"},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/zhangjikai/notes"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"term":{"copyButtons":true,"fade":false,"lineStyles":true,"prompt":"(?<prompt>[^\\$^#^:]*)(?<pathsep>:?)(?<path>[^\\$^#]*?)(?<delimiter>[\\$#] )(?<command>.*)$","style":"classic"},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://www.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"gitbook":">=3.1.0","sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/notes/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"记录平时遇到的一些问题以及基础知识"},"file":{"path":"java/README.md","mtime":"2017-11-21T10:22:18.449Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-27T01:57:16.932Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"nginx","level":"8.2","depth":1,"next":{"title":"C","level":"9","depth":0,"ref":"","articles":[{"title":"Makefile","level":"9.1","depth":1,"path":"c/Makefile.md","ref":"c/Makefile.md","articles":[]},{"title":"GDB","level":"9.2","depth":1,"path":"c/GDB.md","ref":"c/GDB.md","articles":[]},{"title":"Cmake","level":"9.3","depth":1,"path":"c/Cmake.md","ref":"c/Cmake.md","articles":[]}]},"previous":{"title":"apache","level":"8.1","depth":1,"path":"server/apache.md","ref":"server/apache.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-highlight","-livereload","search-plus@^0.0.11","simple-page-toc@0.1.1","github@^2.0.0","edit-link@^2.0.2","prism@^2.1.0","prism-themes@^0.0.2","anchors@^0.7.1","disqus","sitemap-general@^0.1.1","anchor-navigation-ex@0.1.8","favicon@^0.0.2","3-ba@^0.9.0","fancybox","github-buttons@2.1.0","katex","term"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-base16-ateliersulphurpool.light.css"]},"disqus":{"useIdentifier":false,"shortName":"book-2"},"fancybox":{"helpers":{"buttons":{}}},"github":{"url":"https://github.com/zhangjikai/notes"},"simple-page-toc":{"maxDepth":4,"skipFirstH1":true},"term":{"copyButtons":true,"fade":false,"lineStyles":true,"prompt":"(?<prompt>[^\\$^#^:]*)(?<pathsep>:?)(?<path>[^\\$^#]*?)(?<delimiter>[\\$#] )(?<command>.*)$","style":"classic"},"donate":{"wechat":"https://zhangjikai.com/resource/weixin.png","alipay":"https://zhangjikai.com/resource/alipay.png","title":"","button":"赏","alipayText":"支付宝打赏","wechatText":"微信打赏"},"sitemap-general":{"prefix":"http://www.zhangjikai.com"},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"anchor-navigation-ex":{"isRewritePageTitle":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"favicon":{"shortcut":"favicon.ico","bookmark":"favicon.ico"},"prism-themes":{},"github-buttons":{"repo":"zhangjikai/notes","types":["star"],"size":"small"},"3-ba":{"configuration":"auto","token":"ff100361cdce95dd4c8fb96b4009f7bc"},"gitbook":">=3.1.0","sharing":{"facebook":true,"twitter":true,"google":false,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/zhangjikai/notes/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchors":{},"search-plus":{}},"theme":"default","author":"zhangjikai","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"笔记","language":"zh-hans","output.name":"site","links":{"sidebar":{"Home":"http://www.zhangjikai.com"}},"gitbook":"3.2.2","description":"记录平时遇到的一些问题以及基础知识"},"file":{"path":"server/nginx.md","mtime":"2017-12-07T08:31:52.863Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-27T01:57:16.932Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

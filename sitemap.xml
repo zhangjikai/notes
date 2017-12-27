@@ -12,6 +12,7 @@
 <url> <loc>http://www.zhangjikai.com/atom/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/chrome/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/server/apache.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://www.zhangjikai.com/server/nginx.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/Makefile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/GDB.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/Cmake.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
