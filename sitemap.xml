@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url> <loc>http://www.zhangjikai.com/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://www.zhangjikai.com/java/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/java/路径.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/spring/web-xml-配置.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/spring/mvc/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
@@ -11,8 +10,7 @@
 <url> <loc>http://www.zhangjikai.com/sublime/中文输入.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/atom/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/chrome/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://www.zhangjikai.com/server/apache.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
-<url> <loc>http://www.zhangjikai.com/server/nginx.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://www.zhangjikai.com/apache/</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/Makefile.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/GDB.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://www.zhangjikai.com/c/Cmake.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
