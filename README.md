@@ -1,7 +1,7 @@
 # 笔记
 
 * [前言](README.md)
-* [Java](java/README.md)
+* Java
   - [路径](java/路径.md)
 * Spring
   - [web.xml 配置](spring/web-xml-配置.md)
@@ -17,9 +17,8 @@
   - [使用](atom/README.md)
 * Chrome
   - [使用](chrome/README.md)
-* Web Server
-  - [apache](server/apache.md)
-  - [nginx](server/nginx.md)
+* Apache
+  - [使用](apache/README.md)
 * C
   - [Makefile](c/Makefile.md)
   - [GDB](c/GDB.md)
