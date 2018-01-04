@@ -1,5 +1,9 @@
 # IDEA
+
 <!-- toc -->
+
+## 资源
+* [IntelliJ IDEA 简体中文专题教程](https://github.com/judasn/IntelliJ-IDEA-Tutorial)
 
 ## 自动生成 serialVersionUID
 ```
@@ -15,14 +19,44 @@ C:\Program Files (x86)\Git\bin\sh.exe -login -i
 路径可能不同，但是要加上`-login -i` 选项
 
 ## 使用
-* 多行编辑 - 按住 `Alt` 选择
+### 多行编辑
+按住 `Alt` 选择
+
+### 查看 git 文件修改
+Version Control -> 选择文件 -> 右击 Show Diff
+
+### Live Template
+* `$END$`，表示最后都编辑完后光标所处的位置
+* `$SELECTION$`，表示设置环绕实时代码模板，环绕功能下面会模板专门进行介绍
+* `$变量名$`- 自定以变量
+
+### Postfix Completion
+使用方法： `变量名.postfix`
+
+* `0.return` -> `return 0`;
 
 ## 插件
 * Alibaba Java Coding Guidelines
 * CodeGlance
 * FindBugs
+* Lombok
+* IdeaVim
 
-## IdeaVim 插件
+### Lombok
+* [https://github.com/mplushnikov/lombok-intellij-plugin](https://github.com/mplushnikov/lombok-intellij-plugin)
+
+1. Enable Annotation Processing 设为 true
+2. maven 添加依赖
+```xml
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.16.18</version>
+    <scope>provided</scope>
+</dependency>
+```
+
+### IdeaVim 插件
 * [定制 vim 插件](http://www.jianshu.com/p/ec6b4b4536aa)
 
 ```

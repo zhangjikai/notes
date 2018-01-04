@@ -15,6 +15,9 @@ ssh-keygen -C 'email address' -t rsa
 ### 缓存用户名和密码
 ```bash
 git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+git config --global credential.helper 'cache --timeout=259200'
 ```
 ## 分支
 
