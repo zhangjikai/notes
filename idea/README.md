@@ -17,6 +17,10 @@ C:\Program Files (x86)\Git\bin\sh.exe -login -i
 ## 使用
 * 多行编辑 - 按住 `Alt` 选择
 
+## 插件
+* Alibaba Java Coding Guidelines
+* CodeGlance
+* FindBugs
 
 ## IdeaVim 插件
 * [定制 vim 插件](http://www.jianshu.com/p/ec6b4b4536aa)
@@ -32,5 +36,3 @@ inoremap <C-d> <Delete>
 
 inoremap jk <Esc>
 ```
-## 配置
-* 取消在第一列添加注释 - Go to File > Settings > Editor > Code Style > Java > Code Generation and uncheck the option "Line comment at first column".

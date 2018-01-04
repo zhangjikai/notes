@@ -17,7 +17,7 @@ git add -A .
 git commit -m "update"
 git push
 git checkout master
-rsync -av --exclude='_book' --exclude='.git' --exclude='node_modules' --exclude='README.md' /home/zhangjikai/GitBook/Library/zhangjk/notes/* .
+rsync -av --exclude='_book' --exclude='.git' --exclude='node_modules' /home/zhangjikai/GitBook/Library/zhangjk/notes/ .
 cp SUMMARY.md README.md
 git add -A .
 git commit -m "update"
