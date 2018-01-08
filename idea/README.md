@@ -5,18 +5,22 @@
 ## 资源
 * [IntelliJ IDEA 简体中文专题教程](https://github.com/judasn/IntelliJ-IDEA-Tutorial)
 
-## 自动生成 serialVersionUID
+## 配置
+### 自动生成 serialVersionUID
 ```
 File -> settings... ->Editor -> Inspsctions
 勾选 Java -> Serialization issues -> Serializable class without 'serialVersionUID'
 ```
 
-## 设置Terminal使用git bash
+### 设置Terminal使用git bash
 找到 `Settings -> Tools -> Terminal`，在 `Shell path`里填上
 ```bash
 C:\Program Files (x86)\Git\bin\sh.exe -login -i
 ```
 路径可能不同，但是要加上`-login -i` 选项
+
+### 取消在第一列添加注释
+Go to File > Settings > Editor > Code Style > Java > Code Generation and uncheck the option "Line comment at first column".
 
 ## 使用
 ### 多行编辑
@@ -41,6 +45,7 @@ Version Control -> 选择文件 -> 右击 Show Diff
 * FindBugs
 * Lombok
 * IdeaVim
+* BrowseWordAtCaret
 
 ### Lombok
 * [https://github.com/mplushnikov/lombok-intellij-plugin](https://github.com/mplushnikov/lombok-intellij-plugin)
@@ -65,8 +70,10 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap <C-s> <Home>
-inoremap <C-e> <End>
+inoremap <C-o> <End>
 inoremap <C-d> <Delete>
 
 inoremap jk <Esc>
 ```
+### BrowseWordAtCaret
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>UP/DOWN</kbd>
