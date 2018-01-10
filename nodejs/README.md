@@ -1,6 +1,18 @@
 # 基础知识
 <!-- toc -->
 
+## 升级 nodejs 和 npm
+升级nodejs
+```
+npm install -g n
+n <version>
+n --help
+```
+升级npm
+```
+npm -g install npm@next
+```
+
 ## 版本号
 ```bash
 *: 任意版本
