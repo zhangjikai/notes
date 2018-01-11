@@ -2,15 +2,9 @@
 <!-- toc -->
 
 ## 升级 nodejs 和 npm
-升级nodejs
+升级nodejs: [nvm](https://github.com/creationix/nvm)
 ```
-npm install -g n
-n <version>
-n --help
-```
-升级npm
-```
-npm -g install npm@next
+nvm install <version>
 ```
 
 ## 版本号
