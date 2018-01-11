@@ -5,6 +5,7 @@
 升级nodejs: [nvm](https://github.com/creationix/nvm)
 ```
 nvm install <version>
+nvm alias default <version>
 ```
 
 ## 版本号
