@@ -1,15 +1,16 @@
 #!/bin/sh
 git add .
 git commit -m "update"
-cd /e/source/git/github/notes
+git push
+cd /d/source/git/github/notes
 git checkout master
 git pull
 git checkout gh-pages
 git pull
-cd /e/source/git/gitbook/zhangjk/notes
+cd /d/source/git/gitbook/zhangjk/notes
 gitbook build
-yes | cp -rf /e/source/git/gitbook/zhangjk/notes/_book/* /e/source/git/github/notes/
-cd /e/source/git/github/notes
+yes | cp -rf /d/source/git/gitbook/zhangjk/notes/_book/* /d/source/git/github/notes/
+cd /d/source/git/github/notes
 git checkout gh-pages
 git add -A .
 git commit -m "update"

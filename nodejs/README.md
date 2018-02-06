@@ -24,3 +24,9 @@ nvm alias default <version>
 ```
 npm config set prefix "D:\nodejs\node_global"
 ```
+
+## 修复npm安装时报VCBuild不存在的错误
+
+```
+npm install --global --production windows-build-tools
+```
