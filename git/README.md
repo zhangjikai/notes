@@ -12,7 +12,13 @@ git config --global user.email "email"
 ```bash
 ssh-keygen -C 'email address' -t rsa
 ```
-
+### 缓存用户名和密码
+```bash
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
+# Set the cache to timeout after 1 hour (setting is in seconds)
+git config --global credential.helper 'cache --timeout=259200'
+```
 ## 分支
 
 ** 创建**
@@ -46,12 +52,6 @@ git tag -a v1.4 -m 'my version 1.4'
 git push origin v1.4
 // 将本地所有标签push到远程服务器
 git push origin --tags
-
-// 删除本地 tag
-git tag -d 标签名  
-
-// 删除远程 tag
-git push origin :refs/tags/标签名  
 ```
 
 ## 回滚

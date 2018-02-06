@@ -1,6 +1,13 @@
 # 基础知识
 <!-- toc -->
 
+## 升级 nodejs 和 npm
+升级nodejs: [nvm](https://github.com/creationix/nvm)
+```
+nvm install <version>
+nvm alias default <version>
+```
+
 ## 版本号
 ```bash
 *: 任意版本
@@ -16,4 +23,10 @@
 ## 修改全局路径
 ```
 npm config set prefix "D:\nodejs\node_global"
+```
+
+## 修复npm安装时报VCBuild不存在的错误
+
+```
+npm install --global --production windows-build-tools
 ```
