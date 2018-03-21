@@ -22,6 +22,13 @@ C:\Program Files (x86)\Git\bin\sh.exe -login -i
 ### 取消在第一列添加注释
 Go to File > Settings > Editor > Code Style > Java > Code Generation and uncheck the option "Line comment at first column".
 
+### Win10 光标不跟随
+
+[参考](https://www.zhihu.com/question/37582743)
+
+* 将 jdk 中的 jre 替换 idea 自带的 jre64。
+* 将 jdk 中的 lib/tools.jar 拷贝到 jre64/lib 中。
+
 ## 使用
 ### 多行编辑
 按住 `Alt` 选择

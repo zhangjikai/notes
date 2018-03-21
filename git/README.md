@@ -19,6 +19,19 @@ git config --global credential.helper 'cache --timeout=3600'
 # Set the cache to timeout after 1 hour (setting is in seconds)
 git config --global credential.helper 'cache --timeout=259200'
 ```
+
+### 配置代理
+```
+Host github.com
+       User git
+       Port 22
+       Hostname github.com
+       ProxyCommand "D:/soft/Git/mingw64/bin/connect.exe" -H 127.0.0.1:1080 %h %p
+       IdentityFile "C:/Users/Administrator/.ssh/id_rsa"
+       TCPKeepAlive yes
+       IdentitiesOnly yes
+```
+
 ## 分支
 
 ** 创建**
