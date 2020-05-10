@@ -60,6 +60,7 @@
   - [大文件](ubuntu/大文件.md)
   - [配置](ubuntu/配置.md)
   - [软件](ubuntu/软件.md)
+  - [配置静态IP](ubuntu/配置ip.md)
 
 * Windows
   - [SSH](windows/ssh.md)
@@ -68,7 +69,7 @@
   - [ConEmu](windows/ConEmu.md)
 
 * Mac
-  - [使用](mac/使用.md) 
+  - [使用](mac/使用.md)
 
 * 软件
   - [实用软件](软件/README.md)
