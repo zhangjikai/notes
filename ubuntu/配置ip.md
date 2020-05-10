@@ -14,11 +14,13 @@ wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 ```
 
 * 修改配置文件
+
 ```bash
 sudo vim /etc/netplan/01-network-manager-all.yaml
 ```
 
 * 内容如下所示
+
 ```
 # Let NetworkManager manage all devices on this system
 network:
@@ -32,9 +34,10 @@ network:
                 gateway4: 192.168.199.1
                 nameservers:
                         addresses: [8.8.8.8,114.114.114.114]
-
 ```
+
 * 配置生效
+
 ```
 sudo netplan apply
 ```
